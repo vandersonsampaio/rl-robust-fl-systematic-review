@@ -1,0 +1,35 @@
+\begin{table}[!ht]
+  \centering
+  \caption{Summary of the comparison with related work.}
+  \label{tab:revisoes-sintese}
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.15}
+  \begin{tabularx}{\columnwidth}{@{}
+    >{\raggedright\arraybackslash}p{2.1cm}
+    >{\raggedright\arraybackslash}X
+    >{\raggedright\arraybackslash}X
+    @{}}
+    \toprule
+    Dimension & Existing reviews & Present review \\
+    \midrule
+
+    Scope
+      & Examine robustness in FL and defenses against adversarial clients. RL- or bandit-based defenses are at most cataloged or identified as a future research direction.
+      & Takes RL- and bandit-based defenses against adversarial clients in FL as its primary object of analysis (77 studies). \\
+
+    Central question
+      & Which defenses exist, how they perform under different attacks, and whether they remain effective under realistic conditions.
+      & Whether performance attributed to the defense stems from learning rather than from the signal, decision granularity, or memory ($\Delta_{\mathrm{L}}$). \\
+
+    Synthesis method
+      & Compare complete mechanisms and show that simple baselines can compete with sophisticated defenses, without classifying which components each baseline holds constant.
+      & Classifies each comparison by the components controlled by the baseline and distinguishes the presence of a comparison from the strength of the evidence it provides. \\
+
+    Experimental quality
+      & Some audits examine datasets, attacks, heterogeneity, and the completeness of experimental evaluations.
+      & Jointly examines random seeds, statistical inference, the use of test data for reward computation or model selection, and the learning budget. \\
+
+    \bottomrule
+  \end{tabularx}
+\end{table}

@@ -1,0 +1,25 @@
+stage,code,description,n
+stage1_S1,E-IC1,not federated learning,2910
+stage1_S1,E-EC4,federated RL (training RL agents),244
+stage1_S1,E-IC2,no defense against adversarial clients,222
+stage1_S1,E-EC3,RL for efficiency/resources without adversaries,221
+stage1_S1,E-IC3,no learned RL/bandit component affecting aggregation (static defense),119
+stage1_S1,E-EC5,review or survey (snowballing only),92
+stage1_S1,E-PER,published before 2017,67
+stage1_S1,E-EC2,adaptive defense without RL/bandit (listed separately),26
+stage1_S1,E-EC1,RL used only by the attacker,20
+stage1_S1,E-IC4,no verifiable empirical evaluation,6
+stage1_S1,E-EC6,"short paper, poster, unavailable full text or non-English",3
+stage1_RQ7,Q7-E,not eligible for RQ7,786
+stage2_S1,E-IC3,no learned RL/bandit component affecting aggregation (static defense),18
+stage2_S1,E-IC2,no defense against adversarial clients,8
+stage2_S1,E-EC7,duplicate or earlier version,6
+stage2_S1,E-EC2,adaptive defense without RL/bandit (listed separately),4
+stage2_S1,E-EC3,RL for efficiency/resources without adversaries,2
+stage2_S1,E-EC4,federated RL (training RL agents),2
+stage2_S1,E-IC4,no verifiable empirical evaluation,2
+stage2_S1,E-IC1,not federated learning,1
+stage2_S1,E-EC6,"short paper, poster, unavailable full text or non-English",1
+stage2_S1,E-EC1,RL used only by the attacker,1
+stage2_RQ7,Q7-E,not eligible for RQ7,13
+stage2_RQ7,E-IC5,"not a full article or preprint (e.g., thesis)",1

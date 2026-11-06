@@ -1,0 +1,53 @@
+id,comparison,other_comparisons,result,statistical_test_or_ci,discussed
+SB-03,Nenhuma,-,inconclusivo,N,N
+V2-0111,fixa,aleatória,agente vence,N,S
+V2-0160,parcial/ablação,aleatória,agente vence,N,P
+V2-0350,fixa,-,agente vence,N,S
+V2-0351,fixa,aleatória,agente vence,N,S
+V2-0383,fixa,-,agente vence,N,S
+V2-0391,fixa,aleatória,agente vence,N,S
+V2-0542,heurística (mesmo sinal),aleatória,agente vence,N,S
+V2-0550,heurística (mesmo sinal),aleatória,agente vence,N,S
+V2-0634,fixa,aleatória,agente vence,N,S
+V2-0688,fixa,aleatória,agente vence,N,S
+V2-0835,fixa,aleatória,agente vence,N,S
+V2-0837,fixa,-,agente vence,N,S
+V2-0940,heurística (outro sinal),aleatória,agente vence,N,S
+V2-0945,fixa,-,agente vence,N,S
+V2-0973,heurística (mesmo sinal),aleatória,agente vence,N,S
+V2-1012,aleatória,fixa,agente vence,N,S
+V2-1030,fixa,aleatória,agente vence,N,S
+V2-1102,heurística (mesmo sinal),-,agente vence,N,S
+V2-1105,fixa,-,agente vence,N,S
+V2-1120,fixa,aleatória,agente vence,N,S
+V2-1126,heurística (mesmo sinal),aleatória,agente vence,N,S
+V2-1130,fixa,aleatória,agente vence,N,S
+V2-1140,fixa,-,agente vence,N,S
+V2-1178,fixa,-,agente vence,N,S
+V2-1179,heurística (mesmo sinal),aleatória,agente vence,N,S
+V2-1199,heurística (outro sinal),aleatória,agente vence,N,S
+V2-1261,heurística (mesmo sinal),aleatória,agente vence,N,S
+V2-1275,fixa,aleatória,agente vence,N,S
+V2-1327,heurística (mesmo sinal),fixa,agente vence,N,S
+V2-1363,heurística (outro sinal),aleatória,agente vence,N,S
+V2-1450,heurística (outro sinal),aleatória,agente vence,N,S
+V2-1483,aleatória,fixa,agente vence,N,S
+V2-2103,parcial/ablação,fixa,agente vence,S,S
+V2-2188,fixa,-,agente vence,N,S
+V2-2475,fixa,aleatória,agente vence,N,S
+V2-2573,fixa,aleatória,agente vence,N,S
+V2-2890,fixa,-,agente vence,N,S
+V2-3215,parcial/ablação,aleatória,agente vence,N,S
+V2-3243,fixa,parcial/ablação,agente vence,N,S
+V2-3265,heurística (mesmo sinal),aleatória,agente vence,N,S
+V2-3331,heurística (outro sinal),aleatória,agente vence,N,S
+V2-3555,fixa,aleatória,agente vence,N,S
+V2-3789,fixa,aleatória,agente vence,N,S
+V2-4059,fixa,-,agente vence,N,S
+V2-4233,fixa,aleatória,agente vence,N,S
+V2-4266,fixa,aleatória,agente vence,N,S
+V2-4540,heurística (mesmo sinal),aleatória,agente vence,N,S
+V2-4727,fixa,aleatória,agente vence,N,S
+V2-4728,aleatória,fixa,agente vence,N,S
+V2-4789,fixa,aleatória,agente vence,N,S
+V2-4812,fixa,-,agente vence,N,S

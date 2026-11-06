@@ -1,0 +1,17 @@
+step,main_synthesis,rq7,note
+records identified (all databases and strings),6580,,"Scopus 4,875; IEEE Xplore 1,202; ACM DL 268; arXiv 235"
+duplicates removed,1717,,"DOI, then normalized title, within and across databases and strings"
+unique records,4863,4863,"4,054 screened with S1 criteria; 809 assessed exclusively for RQ7"
+records screened with S1 criteria,4054,,
+records assessed exclusively for RQ7,,809,
+excluded at stage 1,3904,786,RQ7: Q7-E
+referred to the non-RL adaptive defenses list at stage 1 (EC2),26,,
+full texts sought (database searches),124,40,
+not retrieved,4,2,"main: access unavailable; RQ7: 1 access unavailable, 1 thesis (E-IC5)"
+full texts assessed (database searches),120,38,
+excluded at stage 2,45,13,"IC4 includes V2-1120, excluded after data extraction (A22). Snowballing exclusions are not counted here (see the snowballing row)"
+included through database searches,75,25,
+snowballing candidates assessed / not retrieved,5 / 1,5 / 1,"main: 6 full texts sought (V2-0945, SB-01 to SB-04, SB-11); SB-11 (FedDive) not retrieved; 3 excluded (SB-01 and SB-02 E-IC2, SB-04 E-EC2). RQ7: 6 sought (SB-05 to SB-09, SB-12); SB-12 (Zhang et al., Neurocomputing 2024) not retrieved; 1 excluded (SB-06, Q7-E). The stage-2 rows above count database records only."
+included through snowballing,2,4,"main: V2-0945 (R2Fed), SB-03 (FedCHO)"
+canonical readings (direct inclusion),,5,
+total included,77,34,

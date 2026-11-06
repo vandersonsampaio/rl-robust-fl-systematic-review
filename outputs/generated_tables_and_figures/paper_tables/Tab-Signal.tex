@@ -1,0 +1,37 @@
+\begin{table}[!ht]
+  \centering
+  \caption{Requirements of the signal fed to the agent.}
+  \label{tab:sinal}
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.12}
+  \begin{tabularx}{\columnwidth}{@{}
+    >{\raggedright\arraybackslash}p{3.99cm}
+    r
+    >{\raggedright\arraybackslash}X
+    @{}}
+    \toprule
+    Requirement & $n$ & Description \\
+    \midrule
+    Client updates only
+      & 27
+      & Cosine similarity, distances, norms, and update statistics \\
+    Server-side data (root, validation, or auxiliary dataset)
+      & 28
+      & Loss or accuracy on a dataset held by the server \\
+    Server-side test set
+      & 17
+      & The data explicitly reported as the source of the signal or reward is the test set or is derived from it \\
+    Device monitoring
+      & 3
+      & Network traffic~\cite{V2-0391}, parameter and sample auditing~\cite{V2-1130}, and social attributes~\cite{V2-0634} \\
+    Client data reconstruction
+      & 2
+      & Gradient inversion followed by distribution comparison~\cite{V2-1231,V2-4812} \\
+    \midrule
+    Computational cost reported numerically
+      & 41
+      & Usually per-round runtime or relative overhead; the cost of training the agent is rarely reported \\
+    \bottomrule
+  \end{tabularx}
+\end{table}

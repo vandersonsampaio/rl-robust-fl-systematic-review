@@ -1,0 +1,129 @@
+\begin{table*}[!htbp]
+  \centering
+  \caption{Studies comparing learned agents with non-learned reference policies under attack ($n = 23$).}
+  \label{tab:qp2}
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.05}
+  \begin{tabularx}{\textwidth}{@{}
+    >{\raggedright\arraybackslash}p{2.2cm}
+    >{\raggedright\arraybackslash}X
+    >{\raggedright\arraybackslash}X
+    >{\raggedright\arraybackslash}p{2.7cm}
+    @{}}
+    \toprule
+    Study & Reference & Result & Runs in the comparison \\
+    \midrule
+
+    \multicolumn{4}{@{}l}{\emph{Heuristic based on the same signal (6)}} \\
+
+    \cite{V2-2103}
+    & Equal weights over the same six signals
+    & Ties in accuracy (64.32 vs.\ 64.35); wins only in detection F1
+    & 3 seeds, mean $\pm$ SD \\
+
+    \cite{V2-4540}
+    & Score-based selection
+    & Ties; the score matches or exceeds the hybrid agent in all three regimes
+    & Not reported \\
+
+    \cite{V2-1102}
+    & Static threshold of 0.5 applied to the same score
+    & Wins by a small margin (0.89 vs.\ 0.86 at $k=5$; 0.68 vs.\ 0.62 at $k=10$)
+    & 15 runs, mean only \\
+
+    FedCHO~\cite{SB-03}
+    & Similarity-based weighting (heuristic branch)
+    & Wins by a small margin (61.6 vs.\ 58.5)
+    & Multiple seeds (number not reported), mean $\pm$ SD \\
+
+    \cite{V2-0973}
+    & Static reputation threshold
+    & Wins by a small margin (0.96 vs.\ 0.92)
+    & Not reported \\
+
+    \cite{V2-0351}
+    & Direct reputation-based selection
+    & Wins by a small margin (1--6 pp in error rate)
+    & Not reported \\
+
+    \midrule
+    \multicolumn{4}{@{}l}{\emph{Fixed action that is itself a defense (9)}} \\
+
+    \cite{V2-1179}
+    & Fixed $\phi$ set to 0 and 1
+    & Ties with the best fixed $\phi$ for each regime
+    & Not reported \\
+
+    \cite{V2-1327}
+    & Fixed weight using the same filter
+    & Ties under poisoning ($\approx$1 pp); wins for rare labels
+    & Mean $\pm$ SD; number of runs not reported \\
+
+    FedStrategist~\cite{V2-4789}
+    & Each rule (arm) evaluated in isolation
+    & Ties or loses, depending on the regime
+    & 1 run \\
+
+    pFedMARL~\cite{V2-0350}
+    & Fixed personalization weight (local-only training)
+    & Loses in local F1 in all three scenarios
+    & Not reported \\
+
+    Meta-SG~\cite{V2-4812}
+    & Manually tuned fixed parameters
+    & Wins (single run)
+    & 1 run \\
+
+    DTAG-FL~\cite{V2-2573}
+    & Fixed rules
+    & Wins (single run, 12 rounds)
+    & 1 run \\
+
+    SARA~\cite{V2-0111}
+    & Each rule (Krum, TrimmedMean, Median) used in isolation
+    & Ties; comparable to the best fixed rule in each regime
+    & Not reported \\
+
+    \cite{V2-0160}
+    & Static policy
+    & Wins
+    & Not reported \\
+
+    HiAudit~\cite{V2-1130}
+    & Auditing all clients with a single method
+    & Wins (CJR $>0.9$ vs.\ 0.55--0.60)
+    & 100 runs, mean only \\
+
+    \midrule
+    \multicolumn{4}{@{}l}{\emph{Oracle, outside $\Pi_0$ (3)}} \\
+
+    SARA~\cite{V2-0111}
+    & Best rule selected \emph{a posteriori}
+    & Selects the optimal rule in 27 of 30 rounds
+    & Not reported \\
+
+    DearFSAC~\cite{V2-0383}
+    & Rule with knowledge of the uncorrupted models
+    & Approaches the oracle
+    & Not reported \\
+
+    \cite{V2-1275}
+    & Retraining from scratch
+    & Approaches the oracle at a lower cost
+    & Not reported \\
+
+    \midrule
+    \multicolumn{4}{@{}l}{\emph{Heuristic based on a different signal (6)}} \\
+
+    \multicolumn{2}{@{}>{\raggedright\arraybackslash}p{7.0cm}}{
+      \cite{V2-0542,V2-1140,V2-1199,V2-3215}: selection by local loss (Power-of-Choice);
+      \cite{V2-0835}: greedy capacity-based selection;
+      \cite{V2-4059}: static weights based on trust
+    }
+    & Wins in all cases
+    & See supplementary material \\
+
+    \bottomrule
+  \end{tabularx}
+\end{table*}

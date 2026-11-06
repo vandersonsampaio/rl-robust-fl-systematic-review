@@ -1,0 +1,63 @@
+id,na_QP2,na_qualidade,categoria_R1,origem_qualidade
+SB-03,True,False,mesmo sinal,
+V2-0111,True,False,oráculo,
+V2-0160,True,True,fixa,nova
+V2-0350,True,True,fixa,amostra anterior
+V2-0351,True,True,mesmo sinal,nova
+V2-0383,True,False,oráculo,
+V2-0391,True,True,aleatória,amostra anterior
+V2-0506,False,True,nenhuma,nova
+V2-0542,True,False,outro sinal,
+V2-0550,True,False,aleatória,
+V2-0634,True,False,aleatória,
+V2-0688,True,False,aleatória,
+V2-0835,True,True,outro sinal,amostra anterior
+V2-0837,True,False,fixa,
+V2-0940,True,False,fixa,
+V2-0945,True,False,fixa,
+V2-0973,True,False,mesmo sinal,
+V2-0987,False,True,nenhuma,amostra anterior
+V2-1012,True,False,aleatória,
+V2-1030,True,False,fixa,
+V2-1041,False,True,nenhuma,amostra anterior
+V2-1102,True,True,mesmo sinal,nova
+V2-1105,True,True,parcial,amostra anterior
+V2-1120,True,False,fixa,
+V2-1126,True,True,aleatória,nova
+V2-1130,True,False,fixa,
+V2-1140,True,True,outro sinal,amostra anterior
+V2-1178,True,False,fixa,
+V2-1179,True,False,fixa,
+V2-1199,True,False,outro sinal,
+V2-1229,False,True,nenhuma,nova
+V2-1231,False,True,nenhuma,nova
+V2-1254,False,True,nenhuma,amostra anterior
+V2-1261,True,True,aleatória,amostra anterior
+V2-1275,True,False,oráculo,
+V2-1294,False,True,nenhuma,nova
+V2-1327,True,False,fixa,
+V2-1363,True,True,aleatória,amostra anterior
+V2-1450,True,False,aleatória,
+V2-1483,True,True,aleatória,amostra anterior
+V2-2103,True,False,mesmo sinal,
+V2-2188,True,False,outro sinal,
+V2-2475,True,False,aleatória,
+V2-2573,True,True,fixa,amostra anterior
+V2-2890,True,False,parcial,
+V2-2891,False,True,nenhuma,nova
+V2-3215,True,False,outro sinal,
+V2-3243,True,True,fixa,amostra anterior
+V2-3265,True,True,fixa,amostra anterior
+V2-3331,True,False,mesmo sinal,
+V2-3555,True,False,parcial,
+V2-3789,True,False,aleatória,
+V2-3830,False,True,nenhuma,amostra anterior
+V2-4059,True,False,outro sinal,
+V2-4233,True,False,parcial,
+V2-4266,True,True,oráculo,amostra anterior
+V2-4339,False,True,nenhuma,nova
+V2-4540,True,False,mesmo sinal,
+V2-4727,True,False,aleatória,
+V2-4728,True,False,aleatória,
+V2-4789,True,False,fixa,
+V2-4812,True,False,fixa,

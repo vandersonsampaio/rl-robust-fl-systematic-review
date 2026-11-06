@@ -1,0 +1,32 @@
+\begin{table}[!ht]
+  \centering
+  \caption{Research questions grouped by analytical theme.}
+  \label{tab:qps}
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\columnwidth}{@{}
+    >{\raggedright\arraybackslash}p{2.1cm}
+    l
+    >{\raggedright\arraybackslash}X
+    @{}}
+    \toprule
+    Theme & ID & Research question \\
+    \midrule
+    \multirow{2}{2.1cm}{Mechanisms}
+      & RQ1 & Which FL defenses against Byzantine or poisoning clients use RL or bandits to determine client weights, client selection, aggregation rules, or defense parameters? Which signals, states, actions, and rewards do they use, and in which domains? \\
+      & RQ4 & Which components are ablated along the dimensions of signal, decision granularity, memory, and learning? \\
+    \midrule
+    \multirow{2}{2.1cm}{Incremental contribution of learning}
+      & RQ2 & Which studies compare the agent against non-learned policies, including fixed actions, random policies, heuristics using the same signal, and oracles, and what are the results? \\
+      & RQ3 & What is the learning budget of each defense, and does any study analyze gains as a function of the evaluation horizon? \\
+    \midrule
+    \multirow{2}{2.1cm}{Cost and reliability}
+      & RQ5 & What computational costs and privacy exposure arise from the signal? \\
+      & RQ6 & What is the quality of the evaluation in terms of test-set leakage, attack fidelity, adaptive attacks, random seeds, statistical analysis, baselines, and code availability? \\
+    \midrule
+    Methodological context
+      & RQ7 & Which auditing or reproducibility studies in RL and robust FL show that simple baselines can match learned methods? \\
+    \bottomrule
+  \end{tabularx}
+\end{table}

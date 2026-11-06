@@ -1,0 +1,54 @@
+\begin{figure*}[!ht]
+  \centering
+  \begin{tikzpicture}[
+      font=\small,
+      >={Stealth[length=2.2mm]},
+      node distance=6mm and 11mm,
+      bloco/.style={
+        draw, rounded corners=2pt, minimum height=11mm,
+        minimum width=21mm, align=center, fill=white,
+        line width=0.6pt
+      },
+      eixo/.style={font=\scriptsize\bfseries, text=black!60},
+      dado/.style={align=center, font=\footnotesize},
+      seta/.style={->, line width=0.6pt},
+      tracejada/.style={->, line width=0.6pt, dashed},
+    ]
+
+    \node[dado] (upd) {updates\\ $\{\Delta_i^t\}_{i=1}^{n}$};
+    \node[dado, below=7mm of upd] (aux) {auxiliary data\\ (optional)};
+
+    \node[bloco, right=of upd] (sinal)
+      {signal\\ $z_i^t=\phi(\Delta_i^t,\cdot)$};
+    \node[bloco, right=of sinal] (pol)
+      {policy\\ $a_t=\pi_\theta(s_t)$};
+    \node[bloco, right=of pol] (agg)
+      {aggregation\\ $\mathrm{AGG}(\{\Delta_i^t\};a_t)$};
+    \node[bloco, below=9mm of $(sinal)!0.5!(pol)$] (mem)
+      {memory\\ $m_t=g(m_{t-1},z_t)$};
+    \node[dado, right=8mm of agg] (glob) {$w^{t+1}$};
+
+    \node[eixo, above=1mm of sinal] {(i) signal};
+    \node[eixo, above=1mm of pol] {(iv) learning};
+    \node[eixo, below=1mm of agg] {(ii) action granularity};
+    \node[eixo, below=1mm of mem] {(iii) memory};
+
+    \draw[seta] (upd) -- (sinal);
+    \draw[seta] (aux) -| ([xshift=-6mm]sinal.south);
+    \draw[seta] (sinal) -- node[above, font=\scriptsize] {$s_t$} (pol);
+    \draw[seta] (sinal.south) |- (mem.west);
+    \draw[seta] (mem.east) -| (pol.south);
+    \draw[seta] (pol) -- node[above, font=\scriptsize]
+      {$a_t\in\mathcal{A}$} (agg);
+    \draw[seta] (upd.north) -- ++(0,10mm) -| (agg.north);
+    \draw[seta] (agg) -- (glob);
+
+    \draw[tracejada] (glob.south) -- ++(0,-14mm) -|
+      node[pos=0.25, below, font=\scriptsize, align=center]
+      {reward $r_t$\\(if applicable, updates $\theta$)}
+      ([xshift=6mm]pol.south);
+
+  \end{tikzpicture}
+  \caption{Components of an adaptive defense and the update of the learned policy.}
+  \label{fig:decomposicao}
+\end{figure*}

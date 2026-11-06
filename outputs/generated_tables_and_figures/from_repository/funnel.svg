@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="248" font-family="sans-serif" font-size="13">
+<text x="322" y="29.040000000000003" text-anchor="end">Studies in the main synthesis</text>
+<rect x="330" y="10" width="370.0" height="28" fill="#4a78b5"/>
+<text x="706.0" y="29.040000000000003">77</text>
+<text x="322" y="67.04" text-anchor="end">Some non-learned policy</text>
+<rect x="330" y="48" width="216.2" height="28" fill="#4a78b5"/>
+<text x="552.2" y="67.04">45</text>
+<text x="322" y="105.04" text-anchor="end">Fixed action, heuristic or oracle</text>
+<rect x="330" y="86" width="110.5" height="28" fill="#4a78b5"/>
+<text x="446.5" y="105.04">23</text>
+<text x="322" y="143.04" text-anchor="end">Heuristic on the same signal</text>
+<rect x="330" y="124" width="28.8" height="28" fill="#4a78b5"/>
+<text x="364.8" y="143.04">6</text>
+<text x="322" y="181.04" text-anchor="end">Same signal, >= 3 seeds and variability</text>
+<rect x="330" y="162" width="4.8" height="28" fill="#4a78b5"/>
+<text x="340.8" y="181.04">1</text>
+<text x="322" y="219.04" text-anchor="end">Same signal, statistical test on the comparison</text>
+<rect x="330" y="200" width="1.0" height="28" fill="#4a78b5"/>
+<text x="336.0" y="219.04">0</text>
+</svg>

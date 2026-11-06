@@ -1,0 +1,42 @@
+\begin{table}[!ht]
+  \centering
+  \caption{Eligibility criteria.}
+  \label{tab:criterios}
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\columnwidth}{@{}
+    l
+    >{\raggedright\arraybackslash}X
+    @{}}
+    \toprule
+    Code & Criterion \\
+    \midrule
+
+    \multicolumn{2}{@{}l}{\emph{Inclusion (all required)}} \\
+    IC1 & The system uses federated learning. \\
+    IC2 & The study proposes or evaluates a defense against adversarial clients (Byzantine behavior, data or model poisoning, backdoors, or malicious free-riding). \\
+    IC3 & The defense includes a decision-making component learned through RL or bandits that affects aggregation weights, client selection or exclusion, aggregation rule selection, or defense parameters. \\
+    IC4 & The defense is evaluated empirically, through simulation or in a real system. \\
+    IC5 & The study is a full peer-reviewed article or a preprint with full text available (preprints are flagged). \\
+
+    \midrule
+    \multicolumn{2}{@{}l}{\emph{Exclusion (any criterion applies)}} \\
+    EC1 & RL is used only by the attacker. \\
+    EC2 & The defense adapts across rounds without an RL or bandit component (heuristic, fixed meta-rule, or single-step optimization). The study is recorded separately as a non-RL adaptive defense. \\
+    EC3 & RL is used in FL only for efficiency, energy, fairness, or communication, without adversarial clients. \\
+    EC4 & Federated RL (FL used to train RL agents), where robustness concerns agent training rather than the defense of model aggregation. \\
+    EC5 & Review or survey (used only for snowballing). \\
+    EC6 & Extended abstract, poster, paper shorter than four pages, unavailable full text, or non-English study. \\
+    EC7 & Duplicate or earlier version of an included study (the most complete version is retained, generally the published version). \\
+    E-PER & Published before 2017. \\
+
+    \midrule
+    \multicolumn{2}{@{}l}{\emph{RQ7 (separate from the main review population)}} \\
+    Q7a & Audit, evaluation, or benchmark of robust FL defenses or RL-based defenses in FL. Surveys are included only when they contain an original experimental study. \\
+    Q7b & Work outside FL that evaluates a learned method under Byzantine adversaries using an evaluation protocol absent from the main corpus. Included only as a methodological example. \\
+    Q7c & Canonical reading specified in the protocol before the search and included directly. \\
+
+    \bottomrule
+  \end{tabularx}
+\end{table}

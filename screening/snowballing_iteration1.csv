@@ -1,0 +1,29 @@
+reference,cited_in_or_cites,direction_pt,status_in_database_pt,title_decision,reason_pt
+"Wan W. et al. MAB-RFL: A multi-armed bandit based robust federated learning framework. JPDC 156:14-24, 2021",V2-4789,trás,"V2-4339 (Scopus; é o artigo do IJCAI 2022 ""Shielding Federated Learning"")",-,"Citação do FedStrategist provavelmente trocada (JPDC); o MAB-RFL é o V2-4339, já lido no lote 2 (I)"
+"Rjoub G. et al. Trust-driven reinforcement selection strategy for federated learning on IoT devices. Computing, 2022",V2-4778,trás,NÃO ENCONTRADO,D,RL de seleção baseada em confiança; verificar se há adversário
+"Rjoub G. et al. Trust-augmented deep reinforcement learning for federated learning client selection. Information Systems Frontiers, 2022",V2-4778,trás,NÃO ENCONTRADO,D,DRL de seleção por confiança; verificar se há adversário
+"Zhang W. et al. R2Fed: Resilient Reinforcement Federated Learning for Industrial Applications. IEEE TII, 2023",V2-4778,trás,V2-0945 / V2-3990 (E-EC4 por regra),D,"Erro da regra: RL pondera modelos de clientes e é avaliado contra ataques (não é RL federado). Reclassificar para D e ler. V2-0945 e V2-3990 são duplicatas (o ""$^{2}$"" quebrou a deduplicação)"
+"Pan Y. et al. Privacy-preserving Byzantine-robust FL via DRL in vehicular networks (DRL-PBFL). IEEE TVT, 2025",V2-4840,trás,V2-0918 (I; já na lista),-,Já na leitura
+Hu C. et al. Adapting Aggregation Rule for Robust FL under Dynamic Attacks (SARA). SEAMS 2025,V2-4789,trás,V2-0111 (I; já na lista),-,Já na leitura
+FedAA: a reinforcement learning perspective on adaptive aggregation (2025),V2-4818,trás,V2-1254 (I; QGS Q2),-,Já na leitura
+Li H. et al. Learning to attack FL: model-based RL attack framework. NeurIPS 2022,V2-4778 / V2-4812,trás,V2-1304 (E-EC1),-,Atacante RL; exclusão mantida
+"Li H. et al. Learning to backdoor federated learning, 2023",V2-4812,trás,V2-4805 (E-EC1),-,Exclusão mantida
+Wang H. et al. Optimizing FL on non-IID data with RL (FAVOR). INFOCOM 2020,V2-4778,trás,V2-0878,E-EC3,"Eficiência/não-IID, sem adversário"
+Sun Y. et al. A fair federated learning framework with reinforcement learning (PG-FFL). IJCNN 2022,V2-4778,trás,NÃO ENCONTRADO,E-EC3,"Justiça, sem adversário"
+Cho Y.J. et al. UCB-CS: bandit-based communication-efficient client selection. ICASSP 2023,V2-4789,trás,NÃO ENCONTRADO,E-EC3,Eficiência de comunicação
+"Sinha A. et al. FedCostAware: cost-aware FL on the cloud, 2025",V2-4789,trás,NÃO ENCONTRADO,E-IC2,"Custo de nuvem, sem defesa"
+"Anwar A., Raychowdhury A. Multi-task federated reinforcement learning with adversaries, 2021",V2-4728,trás,NÃO ENCONTRADO,E-EC4,RL federado
+"Xu X., Lyu L. A reputation mechanism is all you need: collaborative fairness and adversarial robustness in FL, 2021",V2-4728,trás,NÃO ENCONTRADO,E-IC3,Reputação sem RL (candidato à ficha §9.2 se contar como adaptativo não-RL)
+"Yan Z. et al. Reinforcement learning guided geometric median for robust FL (RL-GM). ""IEEE Trans. on Machine Learning"" 18(4), 2024",V2-4818,trás,NÃO ENCONTRADO,não localizável,Periódico inexistente; referência provavelmente espúria (reforça a baixa qualidade do OptiGradTrust)
+Nie X. et al. Mobility-aware cooperative caching in IoVs based on secure asynchronous federated and DRL. IEEE IoTJ 2025,V2-4840,trás,V2-0822 (E-IC3),-,Exclusão mantida
+Li T. et al. A First Order Meta Stackelberg Method for Robust Federated Learning (arXiv 2306.13800; ICML-W 2023) e relatório técnico 2306.13273,V2-4812,trás (versão),NÃO ENCONTRADO,E-EC7,Versões anteriores do Meta-SG; manter 2410.17431. Confirmar os IDs
+"Rodríguez-Barroso N. et al. Survey on FL threats: taxonomy, experimental study and challenges. Information Fusion, 2023",V2-4812 / V2-4764,trás,NÃO ENCONTRADO,Q7-D,Survey com estudo experimental de defesas
+"Bellachia A.A. et al. SoK: Understanding backdoor attacks & defenses in FL. Expert Systems with Applications, 2026",V2-4735,trás,NÃO ENCONTRADO,Q7-D,SoK de backdoor; verificar se discute prática de avaliação
+Sharma G. et al. SoK: Systematizing attack studies in FL - from sparseness to completeness. AsiaCCS 2023,V2-4839,trás,NÃO ENCONTRADO,Q7-D,SoK de ataques; tangencial
+Khan M.A. et al. On the pitfalls of security evaluation of robust FL. IEEE SPW 2023,vários,trás,V2-0870 (Q7-I),-,Já na leitura
+Shejwalkar V. et al. Back to the drawing board. IEEE S&P 2022,vários,trás,V2-0252 (Q7-I),-,Já na leitura
+"Almutairi S., Barnawi A. Model poisoning attacks in FL for autonomous vehicles: a benchmark study. Results in Eng. 2024",V2-4840,trás,V2-1403 (Q7-I),-,Já na leitura
+Federated Client Selection under Partial Visibility: A POMDP Approach with Spatio-Temporal Attention (arXiv 2605.11752),V2-4728,frente,NÃO ENCONTRADO,E-EC3,"RL de seleção por heterogeneidade, sem adversário"
+"FedDive: escaping local minima through divergence-rewarded exploration in FL (KAIS 2025, 10.1007/s10115-025-02623-y)",V2-4789,frente,NÃO ENCONTRADO,D,Sem resumo no Semantic Scholar; conferir se há RL e adversário
+Secure-CHG: robust and fair FL via hybrid defense and contribution-aware trust (arXiv 2606.31066),V2-4812,frente,NÃO ENCONTRADO,E-IC3,Defesa híbrida sem RL
+FedSecure-Chain: robust and verifiable FL against poisoning in e-health (Front. Public Health 2026),V2-4789,frente,V2-1605,-,Já triado

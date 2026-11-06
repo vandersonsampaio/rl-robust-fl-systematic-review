@@ -1,0 +1,49 @@
+\begin{table*}[!ht]
+  \centering
+  \caption{Baseline policies and components controlled when comparing them with the agent.}
+  \label{tab:baselines}
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.15}
+  \begin{tabularx}{\textwidth}{@{}
+    >{\raggedright\arraybackslash}X
+    c c c
+    >{\raggedright\arraybackslash}X
+    @{}}
+    \toprule
+    & \multicolumn{3}{c}{Held constant relative to the agent} & \\
+    \cmidrule(lr){2-4}
+    Baseline & Signal & \makecell{Action Space} & Memory & What the comparison shows \\
+    \midrule
+
+    External static aggregator (Krum, FLTrust)
+      & \xmark & \xmark & \xmark
+      & Whether the complete defense outperforms an established defense \\
+
+    Fixed action equivalent to no defense
+      & \xmark & \cmark & \xmark
+      & Whether the complete defense improves over no defensive intervention \\
+
+    Random policy
+      & \xmark & \cmark & \xmark
+      & Whether informed decisions outperform random actions \\
+
+    Heuristic based on a different signal
+      & \xmark & \cmark & \pmark
+      & Whether the complete mechanism outperforms an alternative heuristic \\
+
+    Validation-selected fixed action
+      & \pmark & \cmark & \pmark
+      & Whether varying decisions over time improves on a fixed action \\
+
+    Heuristic based on the same signal
+      & \cmark & \cmark & \cmark
+      & Whether the learned policy improves on a non-learned rule using the same information \\
+
+    Oracle
+      & --- & \cmark & ---
+      & How closely the agent approaches a privileged-information reference \\
+      
+    \bottomrule
+  \end{tabularx}
+\end{table*}

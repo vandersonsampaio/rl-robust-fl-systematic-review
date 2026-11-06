@@ -1,0 +1,60 @@
+\begin{table}[!ht]
+  \centering
+  \caption{Quality assessment criteria and conditions for partial scoring.}
+  \label{tab:qa}
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.12}
+  \begin{tabularx}{\columnwidth}{@{}
+    l
+    >{\raggedright\arraybackslash}X
+    >{\raggedright\arraybackslash}X
+    @{}}
+    \toprule
+    ID & Criterion & Condition for partial scoring (0.5) \\
+    \midrule
+
+    \multicolumn{3}{@{}l}{\emph{Experimental validity}} \\
+
+    QA1 & Neither the reward nor model selection uses the test set. &
+    Server-side data are sampled from the test set but kept disjoint from the final evaluation, or the data used to compute the reward are insufficiently described. \\
+
+    QA5 & The defense is compared with an informative policy in $\Pi_0$, such as a heuristic based on the same signal or a fixed action that itself constitutes a defense. &
+    The reference is a random policy, a heuristic based on a different signal, a partial ablation with an unspecified replacement rule, or an oracle. \\
+
+    \midrule
+    \multicolumn{3}{@{}l}{\emph{Statistical rigor}} \\
+
+    QA2 & At least three random seeds are used, and variability is reported. &
+    Multiple runs without a measure of variability, or variability reported with fewer than three random seeds. \\
+
+    QA3 & The main comparisons include a statistical test or confidence interval. &
+    --- \\
+
+    \midrule
+    \multicolumn{3}{@{}l}{\emph{Reproducibility}} \\
+
+    QA4 & Sufficient code for the agent and experiment is directly accessible, including the components needed to inspect the evaluated configuration. &
+    Accessible code is incomplete, or code is declared available without direct access, such as upon request, without a link, or through a broken link. \\
+
+    \midrule
+    \multicolumn{3}{@{}l}{\emph{Reporting quality}} \\
+
+    QA7 & The agent's training volume (steps, episodes, iterations, or rounds) and at least one optimization parameter (learning rate, discount factor, replay or batch size) are reported, allowing the learning budget to be quantified. &
+    Only the training volume, only optimization parameters, or only the exploration schedule is reported. \\
+
+    \midrule
+    \multicolumn{3}{@{}l}{\emph{Security evaluation adequacy}} \\
+
+    QA6 & The evaluated attacks follow their original definitions. &
+    The description is insufficient to verify compliance with the original attack definition. \\
+
+    QA8 & The defense is compared with strong static defenses from both families considered, including a server-data-based defense, such as FLTrust, and a robust statistical rule. &
+    The comparison includes only one of the two defense families. \\
+
+    QA9 & The defense is evaluated against an adaptive attack that uses knowledge of the defense. &
+    The attack is described as adaptive but does not use knowledge of the defense. \\
+
+    \bottomrule
+  \end{tabularx}
+\end{table}

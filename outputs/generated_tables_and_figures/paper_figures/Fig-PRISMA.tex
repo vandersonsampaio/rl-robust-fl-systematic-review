@@ -1,0 +1,30 @@
+\begin{figure*}[!ht]
+\centering
+\begin{tikzpicture}[
+  node distance=5mm and 8mm,
+  main/.style={draw, rounded corners, align=center, font=\footnotesize, text width=52mm, fill=blue!6, minimum height=9mm},
+  side/.style={draw, rounded corners, align=left, font=\scriptsize, text width=64mm, fill=gray!8},
+  phase/.style={font=\footnotesize, rotate=90, anchor=south},
+  arr/.style={-{Latex[length=2mm]}, thick}]
+  \node[main] (id) {Records identified ($n=6,580$)\\{\scriptsize Scopus 4,875; IEEE 1,202; ACM 268; arXiv 235}};
+  \node[side, right=of id] (dup) {Duplicates removed ($n=1,717$)};
+  \node[main, below=of id] (tri) {Unique records screened ($n=4,863$)\\{\scriptsize 4,054 using S1 criteria; 809 exclusively for RQ7}};
+  \node[side, right=of tri] (ex1) {Excluded at Stage 1 ($n=3,904$): IC1 2,910; EC4 244; IC2 222; EC3 221; IC3 119; EC5 92; before 2017 67; EC1 20; IC4 6; EC6 3.\\ For the non-RL form (EC2): 26.};
+  \node[main, below=of tri] (bus) {Full texts sought ($n=124$)};
+  \node[side, right=of bus] (nr) {Not retrieved ($n=4$; access unavailable)};
+  \node[main, below=of bus] (ava) {Full texts assessed ($n=120$)};
+  \node[side, right=of ava] (ex2) {Excluded at Stage 2 ($n=45$): IC3 18; IC2 8; EC7 6; EC2 4; EC3 2; EC4 2; IC4 2, one of them after data extraction; IC1 1; EC1 1; EC6 1.};
+  \node[main, below=of ava] (inc) {Included through database searches ($n=75$)};
+  \node[side, right=of inc] (sb) {\emph{Snowballing}: 5 assessed, 1 not retrieved, 2 included.};
+  \node[main, below=of inc, fill=green!12, very thick] (tot) {\textbf{Studies included in the synthesis ($n=77$)}};
+  \node[side, right=of tot, fill=orange!10] (qp7) {RQ7: 25 from searches, 4 through \emph{snowballing}, and 5 canonical readings ($n=34$).};
+  \foreach \a/\b in {id/tri, tri/bus, bus/ava, ava/inc, inc/tot} \draw[arr] (\a) -- (\b);
+  \foreach \a/\b in {id/dup, tri/ex1, bus/nr, ava/ex2} \draw[arr] (\a) -- (\b);
+  \draw[arr] (sb) -- (tot.east);
+  \node[phase] at ($(id.west)+(-3mm,0)$) {Identification};
+  \node[phase] at ($(tri.west)!0.5!(bus.west)+(-3mm,0)$) {Screening};
+  \node[phase] at ($(inc.west)!0.5!(tot.west)+(-3mm,0)$) {Inclusion};
+\end{tikzpicture}
+\caption{Study identification, screening, and inclusion flow, following PRISMA 2020.}
+\label{fig:prisma}
+\end{figure*}

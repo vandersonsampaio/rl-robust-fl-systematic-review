@@ -1,0 +1,59 @@
+id,title,check,r1,r2_original,r2_revised,final_decision,date
+V2-0118,Adaptive Defense Mechanisms Against Dynamic Poisoning Attacks in Decentralized Federated Learning,A_exclusoes,E-EC6,I,E-EC6,E-EC6,2026-10-13
+V2-0225,Anomaly detection for industrial Internet of Things devices based on self-adaptive blockchain sharding and federated learning,A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-0230,"Are You Diligent, Inefficient, or Malicious? A Self-Safeguarding Incentive Mechanism for Large-Scale Federated Industrial Maintenance Based on Double-Layer Reinforcement Learning",A_exclusoes,E-IC3,I,E-IC3,E-IC3,2026-10-13
+V2-0352,Corruption-Resilient Combinatorial Bandit Learning for Heterogeneous Network Systems,A_exclusoes,E-EC3,I,E-EC3,E-EC3,2026-10-13
+V2-0353,Cost-Efficient Shuffling and Regrouping Based Defense for Federated Learning,A_exclusoes,E-EC2,I,E-EC2,E-EC2,2026-10-13
+V2-0385,Decentralized Federated Graph Learning With Lightweight Zero Trust Architecture for Next-Generation Networking Security,A_exclusoes,E-IC3,I,E-IC3,E-IC3,2026-10-13
+V2-0404,Deep Reinforcement Learning for Resource Allocation in Blockchain-Based Federated Learning,A_exclusoes,E-IC3,E-EC3,E-IC3,E-IC3,2026-10-13
+V2-0421,Design of an Integrated Model for Iterative Federated Meta-Reinforcement Intelligence in Zero Day Iot Attack Detections,A_exclusoes,E-IC2,E-IC2,,E-IC2,2026-10-13
+V2-0472,Edge-Intelligent Block Chain Framework for Federated Privacy-Preserving Medical Diagnostics,A_exclusoes,E-EC2,I,E-EC2,E-EC2,2026-10-13
+V2-0477,Efficient Client Contribution Evaluation for Horizontal Federated Learning,A_exclusoes,E-IC2,I,E-IC2,E-IC2,2026-10-13
+V2-0493,Empowering Trustworthy Client Selection in Edge Federated Learning Leveraging Reinforcement Learning,A_exclusoes,E-IC2,I,E-IC2,E-IC2,2026-10-13
+V2-0518,Enhancing Security for Federated DRL-GAN Strategies in Energy-Efficient Wireless Sensor Networks,A_exclusoes,E-EC4,E-EC4,,E-EC4,2026-10-13
+V2-0528,Explainable AI-based Federated Deep Reinforcement Learning for Trusted Autonomous Driving,A_exclusoes,E-IC2,E-EC3,E-IC2,E-IC2,2026-10-13
+V2-0745,Incentive Sharing: A Consumer-Data Privacy Trusted Sharing Paradigm via Proximal Policy Optimization in Industry 5.0,A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-0875,Optimization for Efficient Federated Learning: Joint Scheduling in Vehicular Edge Computing Networks,A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-0976,Reputation-Based Model Aggregation and Resource Optimization in Wireless Federated Learning Systems,A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-1008,Robust Contextual Combinatorial Multi-Armed Bandits for Unreliable Network Systems,A_exclusoes,E-EC3,I,E-EC3,E-EC3,2026-10-13
+V2-1009,Robust Distributed Intrusion Detection System for Edge of Things,A_exclusoes,E-EC2,I,E-EC2,E-EC2,2026-10-13
+V2-1084,TD-MDB: A Truth-Discovery-Based Multidimensional Bidding Strategy for Federated Learning in Industrial IoT Systems,A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-1160,Zero-Trust and Reinforcement Learning for Secure Federated Intelligence in 6G Edge Networks,A_exclusoes,E-IC4,I,E-IC4,E-IC4,2026-10-13
+V2-1168,A federated learning-based selection and incentive system using blockchain technology,A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-1180,A software-defined wrapper discriminant federated learning-reinforcement attention adversarial regression approach for privacy and task management in cloud edge computing,A_exclusoes,E-IC2,E-IC2,,E-IC2,2026-10-13
+V2-1200,An innovative multi-agent approach for robust cyber–physical systems using vertical federated learning,A_exclusoes,E-EC4,I,E-EC4,E-EC4,2026-10-13
+V2-1205,Attention-based intrusion detection in MQTT-IoT network: a federated learning and deep reinforcement learning approach,A_exclusoes,E-IC2,E-IC2,,E-IC2,2026-10-13
+V2-1215,BRITE-FL: Blockchain-based reputation and incentive token enhanced federated learning for IoT ecosystems,A_exclusoes,E-EC2,E-PER (sem PDF),E-EC2,E-EC2,2026-10-13
+V2-1239,DRIFT: DCT-based robust and intelligent federated learning with trusted privacy,A_exclusoes,E-IC3,E-PER (sem PDF),E-IC3,E-IC3,2026-10-13
+V2-1253,Fed-Inforce-Fusion: A federated reinforcement-based fusion model for security and privacy protection of IoMT networks against cyber-attacks,A_exclusoes,E-IC2,E-IC2,,E-IC2,2026-10-13
+V2-1933,Anti-Byzantine Attacks Enabled Vehicle Selection for Asynchronous Federated Learning in Vehicular Edge Computing,A_exclusoes,E-IC3,I,E-IC3,E-IC3,2026-10-13
+V2-2070,Blockchain Assisted Trust Management for Data-Parallel Distributed Learning,A_exclusoes,E-IC1,I,E-IC1,E-IC1,2026-10-13
+V2-2154,Client selection and resource scheduling in reliable federated learning for UAV-assisted vehicular networks,A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-2928,Federated Learning Incentive Mechanism Setting in UAV-Assisted Space–Terrestrial Integration Networks,A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-2944,Federated reinforcement learning–driven multi-task optimization for robust and ethical edge internet of things security,A_exclusoes,E-IC3,E-IC2,E-IC3,E-IC3,2026-10-13
+V2-2975,FedTwin: Blockchain-Enabled Adaptive Asynchronous Federated Learning for Digital Twin Networks,A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-3702,Node Screening Method Based on Federated Learning with IoT in Opportunistic Social Networks,A_exclusoes,E-IC2,I,E-IC2,E-IC2,2026-10-13
+V2-4262,SecuFL-IoT: an adaptive privacy-preserving federated learning framework for anomaly detection in smart industrial networks,A_exclusoes,E-IC3,I,E-IC3,E-IC3,2026-10-13
+V2-4721,"Zero knowledge verifiable, semi asynchronous federated learning for trajectory prediction on permissioned blockchain",A_exclusoes,E-IC3,E-IC3,,E-IC3,2026-10-13
+V2-0350,Cooperative Multi-Agent Reinforcement Learning for Adaptive Aggregation in Semi-Supervised Federated Learning with non-IID Data,B_inclusoes,I,I,,I,2026-10-13
+V2-0391,Deep Learning based Moving Target Defence for Federated Learning against Poisoning Attack in MEC Systems with a 6G Wireless Model,B_inclusoes,I,I,,I,2026-10-13
+V2-0835,Multi-Job Hierarchical Federated Learning for Consumer-Grade UAVs: A Joint Client Selection and Resource Allocation Approach,B_inclusoes,I,I,,I,2026-10-13
+V2-0987,Resisting Poisoning Attacks in Federated Learning via Dual-Domain Distance and Trust Assessment,B_inclusoes,I,I,,I,2026-10-13
+V2-1041,SecureDFL: A Secure Distributed Federated Learning Framework Against Poisoning Attacks,B_inclusoes,I,E-IC3,I,I,2026-10-13
+V2-1105,Toward Trustworthy IIoT: A Reinforcement Learning Framework With Federated Unlearning,B_inclusoes,I,I,,I,2026-10-13
+V2-1140,Two-Stage Client Selection for Federated Learning Against Free-Riding Attack: A Multiarmed Bandits and Auction-Based Approach,B_inclusoes,I,I,,I,2026-10-13
+V2-1254,FedAA: a reinforcement learning perspective on adaptive aggregation for fair and robust federated learning,B_inclusoes,I,I,,I,2026-10-13
+V2-1261,FedDRLPD: Deep reinforcement Learning-Based defense mechanism against poisoning attacks in federated learning,B_inclusoes,I,I,,I,2026-10-13
+V2-1363,Toward Smart Security Enhancement of Federated Learning Networks,B_inclusoes,I,I,,I,2026-10-13
+V2-1483,A hierarchical RL-driven federated framework for robust and real-time anomaly detection in IoT networks,B_inclusoes,I,E-IC2,I,I,2026-10-13
+V2-2573,"DTAG-FL: A Digital-Twin, Attention-Graph, and Reinforcement-Learning Framework for Byzantine-Robust Federated Learning",B_inclusoes,I,I,,I,2026-10-13
+V2-3243,Intelligent Aggregation Federation: A Learning-Based Metasystem for Secure and Robust Federated Learning in Finance,B_inclusoes,I,I,,I,2026-10-13
+V2-3265,Interpretable reputation driven asynchronous consensus vehicle networking federated learning architecture,B_inclusoes,I,I,,I,2026-10-13
+V2-3830,Participant Selection for Efficient and Trusted Federated Learning in Blockchain-Assisted Hierarchical Federated Learning Architectures,B_inclusoes,I,I,,I,2026-10-13
+V2-4266,Secure Dynamic Scheduling for Federated Learning in Underwater Wireless IoT Networks,B_inclusoes,I,I,,I,2026-10-13
+SB-03,,D_QP2,extracao_principal,ver planilha v4,,R1 (extração conciliada),2026-10-13
+V2-4789,,D_QP2,extracao_principal,ver planilha v4,,R1 (extração conciliada),2026-10-13
+V2-2103,,D_QP2,extracao_principal,ver planilha v4,,R1 (extração conciliada),2026-10-13
+V2-1102,,D_QP2,extracao_principal,ver planilha v4,,R1 (extração conciliada),2026-10-13
+V2-4728,,D_QP2,extracao_principal,ver planilha v4,,R1 (extração conciliada),2026-10-13
+V2-1363,,D_QP2,extracao_principal,ver planilha v4,,R1 (extração conciliada),2026-10-13

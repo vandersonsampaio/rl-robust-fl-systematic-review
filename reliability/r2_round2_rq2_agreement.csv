@@ -1,0 +1,53 @@
+id,sample_origin,r1_before_consensus,r1_after_A20,r2,r2_no_defense,r2_unresolved,r1_result,r1_result_after_A20,r2_result,r1_discussed,r2_discussed,r2_variability,r2_test,r2_metric,agree
+SB-03,só QP2,mesmo,mesmo,mesmo,N,False,estreita,,estreita,S,S,S,N,Acurácia de Teste,True
+V2-0111,só QP2,oraculo,oraculo,fixa,N,False,,,empate,N,S,N,N,,False
+V2-0160,nova,fixa,fixa,fixa,N,False,clara,,clara,N,S,N,N,ASR (Attack Success Rate / Taxa de Sucesso do Ataque) | Accuracy (Acurácia Recuperada) | Stealth Score,True
+V2-0350,amostra anterior,fixa,fixa,nenhuma,N,False,,empate,,N,?,,,,False
+V2-0351,nova,mesmo,mesmo,mesmo,N,False,clara,,estreita,N,S,N,N,Taxa de Erro (Error rate – $Err$),True
+V2-0383,só QP2,oraculo,oraculo,oraculo,N,False,,,clara,S,S,N,N,número de rodadas de comunicação para atingir pela primeira vez a taxa de erro alvo,True
+V2-0391,amostra anterior,aleatoria,aleatoria,fixa,S,True,,,clara,N,S,S,N,Acurácia (otimizada em conjunto com o Tempo de Reconhecimento na função objetivo),False
+V2-0542,só QP2,outro,outro,aleatoria,N,False,,,empate,N,S,S,N,"Acurácia de Teste ($Acc$), Variância ($Var$) e Retorno Total ($R_T$)",False
+V2-0550,só QP2,aleatoria,aleatoria,aleatoria,N,False,,,clara,N,S,N,N,Acurácia do Modelo Global (%),True
+V2-0634,só QP2,aleatoria,aleatoria,nenhuma,N,False,,,,N,N,,,,False
+V2-0688,só QP2,aleatoria,aleatoria,aleatoria,N,False,,,estreita,S,S,N,N,CA (Clean Data Accuracy / Acurácia em Dados Limpos),True
+V2-0835,amostra anterior,outro,outro,fixa,N,False,,,clara,N,S,N,N,Tempo Total de Treinamento [s] e Consumo Total de Energia [J] | Seção V-D; Figuras 6(b) e 7(b); Tabela III.,False
+V2-0837,só QP2,fixa,aleatoria,aleatoria,N,False,,,clara,N,S,N,N,Acurácia de detecção de ataque DDoS (DDoS attack detection accuracy),False
+V2-0940,só QP2,fixa,aleatoria,fixa,N,False,,,clara,N,S,N,N,Acurácia no conjunto de teste (Test Accuracy) / Recompensa total média temporal (Time Average Total Reward),True
+V2-0945,só QP2,fixa,nenhuma,fixa,S,True,,,clara,N,S,S,N,Acurácia (Accuracy),True
+V2-0973,só QP2,mesmo,mesmo,mesmo,N,False,estreita,,estreita,N,S,N,N,Acurácia Média do Modelo Global (Average Accuracy),True
+V2-1012,só QP2,aleatoria,aleatoria,aleatoria,N,False,,,clara,N,S,N,N,Melhor Acurácia Média dos clientes honestos (Best Mean Accuracy %).,True
+V2-1030,só QP2,fixa,nenhuma,fixa,S,True,,,clara,N,S,N,N,Custo de Treinamento (Training Cost) para atingir uma acurácia alvo.,True
+V2-1102,nova,mesmo,mesmo,mesmo,N,False,empate,,estreita,P,S,N,N,Acurácia do Modelo Global (FL Global Model Accuracy),True
+V2-1105,amostra anterior,parcial,parcial,parcial,N,False,,,clara,N,S,S,N,ACC (Clean Accuracy) e ASR (Attack Success Rate),True
+V2-1120,só QP2,fixa,fixa,nenhuma,N,False,estreita,,,N,N,,,,False
+V2-1126,nova,aleatoria,aleatoria,aleatoria,N,False,,,?,N,S,S,N,Acurácia de Teste do modelo global (Test Accuracy),True
+V2-1130,só QP2,fixa,fixa,?,N,False,,clara,clara,N,S,N,N,CJR / Overhead de Computação (para AL) ou Global Model Accuracy (para ND/A),False
+V2-1140,amostra anterior,outro,outro,outro,N,False,,,clara,N,S,N,N,Acurácia do Teste / Taxa de Convergência,True
+V2-1178,só QP2,fixa,nenhuma,fixa,S,True,,,clara,N,S,N,N,?,True
+V2-1179,só QP2,fixa,fixa,aleatoria,N,False,empate,,estreita,S,S,N,N,Test Accuracy (Acurácia de classificação do modelo global ao longo das rodadas).,False
+V2-1199,só QP2,outro,outro,aleatoria,N,False,,,clara,N,P,S,N,SRS (Selection Robustness Score) e Acurácia Global,False
+V2-1261,amostra anterior,aleatoria,aleatoria,aleatoria,N,False,,,clara,N,S,N,N,Acurácia do Modelo Global,True
+V2-1275,só QP2,oraculo,oraculo,oraculo,N,False,,,clara,P,S,N,N,Custo Computacional (Tempo de execução em segundos),True
+V2-1327,só QP2,fixa,fixa,fixa,N,False,empate,,clara,P,S,S,N,Acurácia de Teste do Modelo Global,True
+V2-1363,amostra anterior,aleatoria,aleatoria,aleatoria,N,False,,,clara,N,S,N,N,Utilidade Média por Rodada (Average Utility),True
+V2-1450,só QP2,aleatoria,aleatoria,fixa,S,True,,,estreita,N,S,N,N,Acurácia de Teste,False
+V2-1483,amostra anterior,aleatoria,aleatoria,aleatoria,N,False,,,estreita,N,S,?,N,F1-score,True
+V2-2103,só QP2,mesmo,mesmo,mesmo,N,False,empate,,clara,P,S,S,N,Det-F1 post-attack,True
+V2-2188,só QP2,outro,nenhuma,nenhuma,N,False,,,,N,N,,,,False
+V2-2475,só QP2,aleatoria,aleatoria,aleatoria,N,False,,,empate,S,S,N,N,curácia (Accuracy) / Acurácia Final no conjunto de teste,True
+V2-2573,amostra anterior,fixa,fixa,nenhuma,N,False,clara,,,N,N,,,,False
+V2-2890,só QP2,parcial,nenhuma,nenhuma,N,False,,,,N,N,,,,False
+V2-3215,só QP2,outro,outro,aleatoria,N,False,,,estreita,N,S,S,N,Acurácia de Teste (ACC %) e Rodadas para Convergência (Round),False
+V2-3243,amostra anterior,fixa,parcial,parcial,N,False,clara,,clara,N,S,N,N,Test AUC,False
+V2-3265,amostra anterior,fixa,nenhuma,fixa,S,True,,,clara,N,S,N,N,Acurácia do Modelo (Model Accuracy) e Perda (Loss),True
+V2-3331,só QP2,mesmo,parcial,parcial,N,False,estreita,,clara,N,S,N,N,Tempo de Treinamento (Time in ms) e Acurácia de Teste (Test Accuracy),False
+V2-3555,só QP2,parcial,parcial,parcial,N,False,,,clara,N,S,S,N,Rodadas até 90% de acurácia (Velocidade de Convergência) (?) / Acurácia (%),True
+V2-3789,só QP2,aleatoria,aleatoria,aleatoria,N,False,,,clara,N,S,N,N,Acurácia de Reconhecimento (%) e Tempo de Espera Acumulado (s),True
+V2-4059,só QP2,outro,outro,outro,N,False,,,clara,N,S,S,S,"Conjunto multidimensional de 4 métricas: Acurácia (%), Latência (s), Energia (kWh) e Resiliência sob Ataque (%).",True
+V2-4233,só QP2,parcial,aleatoria,aleatoria,N,False,,,clara,N,S,N,N,Acurácia de Teste (%) (Test Accuracy),False
+V2-4266,amostra anterior,oraculo,oraculo,aleatoria,N,False,,,clara,N,S,N,N,Acurácia de Teste (Test Accuracy),False
+V2-4540,só QP2,mesmo,mesmo,mesmo,N,False,clara,,empate,S,S,N,N,Acurácia do modelo global (Global model accuracy) ao longo das rodadas de FL.,True
+V2-4727,só QP2,aleatoria,aleatoria,fixa,S,True,,,clara,N,S,N,N,Acurácia de Identificação de Adversários (Identification Accuracy),False
+V2-4728,só QP2,aleatoria,aleatoria,aleatoria,N,False,,,clara,N,S,S,N,Acurácia de teste final (Acc. %),True
+V2-4789,só QP2,fixa,fixa,fixa,N,False,empate,,empate,N,S,N,N,Acurácia Final do Modelo Global (%),True
+V2-4812,só QP2,fixa,fixa,nenhuma,N,False,clara,,,S,N,,,,False

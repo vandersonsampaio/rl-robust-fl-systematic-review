@@ -1,0 +1,8 @@
+id,study,venue_year,agent,expected,retrieved_by_final_S1,outcome
+Q1,"Wang et al., AdaAggRL (arXiv:2406.14217)",AAAI 2025,TD3,retrieved and included,yes,included (V2-1231)
+Q2,"He et al., FedAA (arXiv:2402.05541)",AAAI 2025,DDPG,retrieved and included,yes,included (V2-1254)
+Q3,FedDRLPD,Knowledge-Based Systems 2026,DQN,retrieved and included,yes,included (V2-1261)
+Q4,"Ahmed et al., TARS (IEEE doc. 11215089)",IEEE 2025,Q-learning,retrieved and included,yes,retrieved; excluded at data extraction under IC4 (amendment A22)
+Q5,"Haque et al., FedStrategist (arXiv:2507.14322)",arXiv 2025,contextual bandit,retrieved and included,yes,included (V2-4789)
+B1,"Tang et al., AdaBFL (arXiv:2604.27434)",arXiv 2026,none (adaptive heuristic),boundary control: excluded under EC2,no,not retrieved (expected outcome for a non-RL defense)
+B2,"Li, Sun and Zheng, Learning to Attack Federated Learning",NeurIPS 2022,RL attacker,boundary control: excluded under EC1,yes,excluded under EC1

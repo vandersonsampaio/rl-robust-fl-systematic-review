@@ -1,0 +1,235 @@
+id,sample_origin,rq2_category_r1,criterion,r1,r2,agree,r2_round1
+V2-0160,nova,fixa,QA1,P,P,True,
+V2-0160,nova,fixa,QA2,N,N,True,
+V2-0160,nova,fixa,QA3,N,N,True,
+V2-0160,nova,fixa,QA4,S,S,True,
+V2-0160,nova,fixa,QA5,S,S,True,
+V2-0160,nova,fixa,QA6,P,?,False,
+V2-0160,nova,fixa,QA7,P,P,True,
+V2-0160,nova,fixa,QA8,N,N,True,
+V2-0160,nova,fixa,QA9,P,N,False,
+V2-0350,amostra anterior,fixa,QA1,S,S,True,S
+V2-0350,amostra anterior,fixa,QA2,N,N,True,P
+V2-0350,amostra anterior,fixa,QA3,N,N,True,N
+V2-0350,amostra anterior,fixa,QA4,S,S,True,N
+V2-0350,amostra anterior,fixa,QA5,S,S,True,S
+V2-0350,amostra anterior,fixa,QA6,P,S,False,S
+V2-0350,amostra anterior,fixa,QA7,S,S,True,P
+V2-0350,amostra anterior,fixa,QA8,N,N,True,P
+V2-0350,amostra anterior,fixa,QA9,N,N,True,P
+V2-0351,nova,mesmo sinal,QA1,S,S,True,
+V2-0351,nova,mesmo sinal,QA2,N,N,True,
+V2-0351,nova,mesmo sinal,QA3,N,N,True,
+V2-0351,nova,mesmo sinal,QA4,N,N,True,
+V2-0351,nova,mesmo sinal,QA5,S,S,True,
+V2-0351,nova,mesmo sinal,QA6,P,?,False,
+V2-0351,nova,mesmo sinal,QA7,S,?,False,
+V2-0351,nova,mesmo sinal,QA8,N,N,True,
+V2-0351,nova,mesmo sinal,QA9,N,N,True,
+V2-0391,amostra anterior,aleatória,QA1,S,S,True,P
+V2-0391,amostra anterior,aleatória,QA2,P,P,True,N
+V2-0391,amostra anterior,aleatória,QA3,N,N,True,N
+V2-0391,amostra anterior,aleatória,QA4,N,N,True,N
+V2-0391,amostra anterior,aleatória,QA5,P,S,False,S
+V2-0391,amostra anterior,aleatória,QA6,P,P,True,S
+V2-0391,amostra anterior,aleatória,QA7,S,P,False,N
+V2-0391,amostra anterior,aleatória,QA8,N,N,True,N
+V2-0391,amostra anterior,aleatória,QA9,N,N,True,N
+V2-0506,nova,nenhuma,QA1,S,S,True,
+V2-0506,nova,nenhuma,QA2,N,N,True,
+V2-0506,nova,nenhuma,QA3,N,N,True,
+V2-0506,nova,nenhuma,QA4,N,N,True,
+V2-0506,nova,nenhuma,QA5,N,P,False,
+V2-0506,nova,nenhuma,QA6,P,P,True,
+V2-0506,nova,nenhuma,QA7,S,S,True,
+V2-0506,nova,nenhuma,QA8,N,N,True,
+V2-0506,nova,nenhuma,QA9,N,N,True,
+V2-0835,amostra anterior,outro sinal,QA1,N,P,False,S
+V2-0835,amostra anterior,outro sinal,QA2,N,N,True,P
+V2-0835,amostra anterior,outro sinal,QA3,N,N,True,N
+V2-0835,amostra anterior,outro sinal,QA4,N,N,True,N
+V2-0835,amostra anterior,outro sinal,QA5,P,S,False,S
+V2-0835,amostra anterior,outro sinal,QA6,P,P,True,S
+V2-0835,amostra anterior,outro sinal,QA7,S,P,False,P
+V2-0835,amostra anterior,outro sinal,QA8,N,N,True,N
+V2-0835,amostra anterior,outro sinal,QA9,N,N,True,N
+V2-0987,amostra anterior,nenhuma,QA1,P,P,True,S
+V2-0987,amostra anterior,nenhuma,QA2,N,N,True,P
+V2-0987,amostra anterior,nenhuma,QA3,N,N,True,N
+V2-0987,amostra anterior,nenhuma,QA4,S,S,True,N
+V2-0987,amostra anterior,nenhuma,QA5,N,S,False,S
+V2-0987,amostra anterior,nenhuma,QA6,P,S,False,S
+V2-0987,amostra anterior,nenhuma,QA7,S,P,False,P
+V2-0987,amostra anterior,nenhuma,QA8,S,S,True,S
+V2-0987,amostra anterior,nenhuma,QA9,P,S,False,P
+V2-1041,amostra anterior,nenhuma,QA1,S,?,False,S
+V2-1041,amostra anterior,nenhuma,QA2,S,S,True,P
+V2-1041,amostra anterior,nenhuma,QA3,N,N,True,N
+V2-1041,amostra anterior,nenhuma,QA4,N,N,True,N
+V2-1041,amostra anterior,nenhuma,QA5,N,?,False,S
+V2-1041,amostra anterior,nenhuma,QA6,P,?,False,S
+V2-1041,amostra anterior,nenhuma,QA7,S,P,False,P
+V2-1041,amostra anterior,nenhuma,QA8,N,P,False,P
+V2-1041,amostra anterior,nenhuma,QA9,P,P,True,P
+V2-1102,nova,mesmo sinal,QA1,N,N,True,
+V2-1102,nova,mesmo sinal,QA2,P,P,True,
+V2-1102,nova,mesmo sinal,QA3,N,N,True,
+V2-1102,nova,mesmo sinal,QA4,N,N,True,
+V2-1102,nova,mesmo sinal,QA5,S,S,True,
+V2-1102,nova,mesmo sinal,QA6,P,S,False,
+V2-1102,nova,mesmo sinal,QA7,S,S,True,
+V2-1102,nova,mesmo sinal,QA8,N,N,True,
+V2-1102,nova,mesmo sinal,QA9,N,N,True,
+V2-1105,amostra anterior,parcial,QA1,S,P,False,S
+V2-1105,amostra anterior,parcial,QA2,S,S,True,P
+V2-1105,amostra anterior,parcial,QA3,S,S,True,N
+V2-1105,amostra anterior,parcial,QA4,N,N,True,N
+V2-1105,amostra anterior,parcial,QA5,P,P,True,S
+V2-1105,amostra anterior,parcial,QA6,P,P,True,S
+V2-1105,amostra anterior,parcial,QA7,S,P,False,P
+V2-1105,amostra anterior,parcial,QA8,N,N,True,N
+V2-1105,amostra anterior,parcial,QA9,N,N,True,N
+V2-1126,nova,aleatória,QA1,S,S,True,
+V2-1126,nova,aleatória,QA2,S,S,True,
+V2-1126,nova,aleatória,QA3,N,N,True,
+V2-1126,nova,aleatória,QA4,N,N,True,
+V2-1126,nova,aleatória,QA5,P,P,True,
+V2-1126,nova,aleatória,QA6,P,P,True,
+V2-1126,nova,aleatória,QA7,P,P,True,
+V2-1126,nova,aleatória,QA8,N,N,True,
+V2-1126,nova,aleatória,QA9,N,N,True,
+V2-1140,amostra anterior,outro sinal,QA1,S,S,True,S
+V2-1140,amostra anterior,outro sinal,QA2,N,N,True,P
+V2-1140,amostra anterior,outro sinal,QA3,N,N,True,N
+V2-1140,amostra anterior,outro sinal,QA4,N,N,True,N
+V2-1140,amostra anterior,outro sinal,QA5,P,P,True,S
+V2-1140,amostra anterior,outro sinal,QA6,P,N,False,S
+V2-1140,amostra anterior,outro sinal,QA7,P,S,False,P
+V2-1140,amostra anterior,outro sinal,QA8,N,N,True,P
+V2-1140,amostra anterior,outro sinal,QA9,N,N,True,N
+V2-1229,nova,nenhuma,QA1,S,S,True,
+V2-1229,nova,nenhuma,QA2,P,P,True,
+V2-1229,nova,nenhuma,QA3,N,N,True,
+V2-1229,nova,nenhuma,QA4,N,N,True,
+V2-1229,nova,nenhuma,QA5,N,?,False,
+V2-1229,nova,nenhuma,QA6,P,?,False,
+V2-1229,nova,nenhuma,QA7,P,P,True,
+V2-1229,nova,nenhuma,QA8,N,N,True,
+V2-1229,nova,nenhuma,QA9,P,N,False,
+V2-1231,nova,nenhuma,QA1,S,S,True,
+V2-1231,nova,nenhuma,QA2,N,N,True,
+V2-1231,nova,nenhuma,QA3,N,N,True,
+V2-1231,nova,nenhuma,QA4,S,S,True,
+V2-1231,nova,nenhuma,QA5,N,S,False,
+V2-1231,nova,nenhuma,QA6,P,P,True,
+V2-1231,nova,nenhuma,QA7,P,P,True,
+V2-1231,nova,nenhuma,QA8,S,S,True,
+V2-1231,nova,nenhuma,QA9,S,P,False,
+V2-1254,amostra anterior,nenhuma,QA1,S,S,True,S
+V2-1254,amostra anterior,nenhuma,QA2,P,N,False,P
+V2-1254,amostra anterior,nenhuma,QA3,N,N,True,N
+V2-1254,amostra anterior,nenhuma,QA4,S,S,True,S
+V2-1254,amostra anterior,nenhuma,QA5,N,S,False,S
+V2-1254,amostra anterior,nenhuma,QA6,P,P,True,S
+V2-1254,amostra anterior,nenhuma,QA7,P,P,True,P
+V2-1254,amostra anterior,nenhuma,QA8,N,N,True,S
+V2-1254,amostra anterior,nenhuma,QA9,N,N,True,P
+V2-1261,amostra anterior,aleatória,QA1,N,P,False,S
+V2-1261,amostra anterior,aleatória,QA2,N,N,True,P
+V2-1261,amostra anterior,aleatória,QA3,N,N,True,N
+V2-1261,amostra anterior,aleatória,QA4,N,N,True,N
+V2-1261,amostra anterior,aleatória,QA5,P,S,False,S
+V2-1261,amostra anterior,aleatória,QA6,P,P,True,S
+V2-1261,amostra anterior,aleatória,QA7,P,P,True,P
+V2-1261,amostra anterior,aleatória,QA8,N,N,True,S
+V2-1261,amostra anterior,aleatória,QA9,N,N,True,P
+V2-1294,nova,nenhuma,QA1,P,?,False,
+V2-1294,nova,nenhuma,QA2,N,N,True,
+V2-1294,nova,nenhuma,QA3,N,N,True,
+V2-1294,nova,nenhuma,QA4,N,N,True,
+V2-1294,nova,nenhuma,QA5,N,S,False,
+V2-1294,nova,nenhuma,QA6,P,P,True,
+V2-1294,nova,nenhuma,QA7,S,P,False,
+V2-1294,nova,nenhuma,QA8,P,P,True,
+V2-1294,nova,nenhuma,QA9,N,N,True,
+V2-1363,amostra anterior,aleatória,QA1,N,N,True,S
+V2-1363,amostra anterior,aleatória,QA2,N,P,False,N
+V2-1363,amostra anterior,aleatória,QA3,N,N,True,N
+V2-1363,amostra anterior,aleatória,QA4,N,N,True,N
+V2-1363,amostra anterior,aleatória,QA5,P,P,True,S
+V2-1363,amostra anterior,aleatória,QA6,P,P,True,S
+V2-1363,amostra anterior,aleatória,QA7,P,P,True,P
+V2-1363,amostra anterior,aleatória,QA8,N,P,False,N
+V2-1363,amostra anterior,aleatória,QA9,N,N,True,N
+V2-1483,amostra anterior,aleatória,QA1,S,S,True,S
+V2-1483,amostra anterior,aleatória,QA2,S,S,True,P
+V2-1483,amostra anterior,aleatória,QA3,S,S,True,N
+V2-1483,amostra anterior,aleatória,QA4,N,N,True,N
+V2-1483,amostra anterior,aleatória,QA5,P,P,True,S
+V2-1483,amostra anterior,aleatória,QA6,P,P,True,S
+V2-1483,amostra anterior,aleatória,QA7,S,P,False,P
+V2-1483,amostra anterior,aleatória,QA8,P,P,True,S
+V2-1483,amostra anterior,aleatória,QA9,N,N,True,P
+V2-2573,amostra anterior,fixa,QA1,S,?,False,S
+V2-2573,amostra anterior,fixa,QA2,N,N,True,P
+V2-2573,amostra anterior,fixa,QA3,N,N,True,N
+V2-2573,amostra anterior,fixa,QA4,N,N,True,N
+V2-2573,amostra anterior,fixa,QA5,S,S,True,S
+V2-2573,amostra anterior,fixa,QA6,P,N,False,S
+V2-2573,amostra anterior,fixa,QA7,S,P,False,P
+V2-2573,amostra anterior,fixa,QA8,P,P,True,S
+V2-2573,amostra anterior,fixa,QA9,P,P,True,S
+V2-2891,nova,nenhuma,QA1,S,S,True,
+V2-2891,nova,nenhuma,QA2,N,N,True,
+V2-2891,nova,nenhuma,QA3,N,N,True,
+V2-2891,nova,nenhuma,QA4,N,N,True,
+V2-2891,nova,nenhuma,QA5,N,S,False,
+V2-2891,nova,nenhuma,QA6,N,P,False,
+V2-2891,nova,nenhuma,QA7,S,P,False,
+V2-2891,nova,nenhuma,QA8,N,N,True,
+V2-2891,nova,nenhuma,QA9,P,N,False,
+V2-3243,amostra anterior,fixa,QA1,S,S,True,S
+V2-3243,amostra anterior,fixa,QA2,S,S,True,P
+V2-3243,amostra anterior,fixa,QA3,S,N,False,N
+V2-3243,amostra anterior,fixa,QA4,N,N,True,N
+V2-3243,amostra anterior,fixa,QA5,S,S,True,S
+V2-3243,amostra anterior,fixa,QA6,P,P,True,S
+V2-3243,amostra anterior,fixa,QA7,S,P,False,P
+V2-3243,amostra anterior,fixa,QA8,S,S,True,S
+V2-3243,amostra anterior,fixa,QA9,N,N,True,P
+V2-3265,amostra anterior,fixa,QA1,N,N,True,S
+V2-3265,amostra anterior,fixa,QA2,N,N,True,P
+V2-3265,amostra anterior,fixa,QA3,N,N,True,N
+V2-3265,amostra anterior,fixa,QA4,N,N,True,N
+V2-3265,amostra anterior,fixa,QA5,S,S,True,S
+V2-3265,amostra anterior,fixa,QA6,P,P,True,S
+V2-3265,amostra anterior,fixa,QA7,S,P,False,P
+V2-3265,amostra anterior,fixa,QA8,S,S,True,P
+V2-3265,amostra anterior,fixa,QA9,N,N,True,P
+V2-3830,amostra anterior,nenhuma,QA1,N,N,True,S
+V2-3830,amostra anterior,nenhuma,QA2,N,N,True,N
+V2-3830,amostra anterior,nenhuma,QA3,N,N,True,N
+V2-3830,amostra anterior,nenhuma,QA4,N,N,True,N
+V2-3830,amostra anterior,nenhuma,QA5,N,S,False,S
+V2-3830,amostra anterior,nenhuma,QA6,P,P,True,S
+V2-3830,amostra anterior,nenhuma,QA7,S,P,False,P
+V2-3830,amostra anterior,nenhuma,QA8,P,N,False,N
+V2-3830,amostra anterior,nenhuma,QA9,N,N,True,N
+V2-4266,amostra anterior,oráculo,QA1,S,S,True,S
+V2-4266,amostra anterior,oráculo,QA2,N,N,True,P
+V2-4266,amostra anterior,oráculo,QA3,N,N,True,N
+V2-4266,amostra anterior,oráculo,QA4,N,N,True,N
+V2-4266,amostra anterior,oráculo,QA5,S,S,True,S
+V2-4266,amostra anterior,oráculo,QA6,P,P,True,S
+V2-4266,amostra anterior,oráculo,QA7,P,P,True,S
+V2-4266,amostra anterior,oráculo,QA8,N,N,True,P
+V2-4266,amostra anterior,oráculo,QA9,N,N,True,P
+V2-4339,nova,nenhuma,QA1,S,S,True,
+V2-4339,nova,nenhuma,QA2,N,N,True,
+V2-4339,nova,nenhuma,QA3,N,N,True,
+V2-4339,nova,nenhuma,QA4,N,N,True,
+V2-4339,nova,nenhuma,QA5,N,S,False,
+V2-4339,nova,nenhuma,QA6,S,N,False,
+V2-4339,nova,nenhuma,QA7,N,P,False,
+V2-4339,nova,nenhuma,QA8,P,P,True,
+V2-4339,nova,nenhuma,QA9,P,?,False,

@@ -1,0 +1,580 @@
+id,field_pt,value
+V2-4727,sementes_estatistica,N (não reportado)
+V2-4727,clientes,6-12 dispositivos; Dirichlet; % de bizantinos variada
+V2-4728,orcamento,"50 rodadas; DQN lr 1e-3, γ 0,9, batch 64, ε com decaimento linear (5.000 passos, incompatível com 50 rodadas); replay 10k"
+V2-4789,sementes_estatistica,N (1 execução; só dp das últimas 10 rodadas)
+V2-0160,sementes_estatistica,N (não reportado)
+V2-0160,clientes,"10 clientes por rodada; IID e não-IID (Dirichlet 0,5)"
+V2-0160,comparacao_nao_aprendida,"fixa (política estática) + ablação ""sem agente"""
+V2-0351,vazamento_teste,N (utilidade medida em conjunto de validação)
+V2-0351,recompensa,exp(utilidade de autenticação) com Acc em conjunto de validação − penalidades
+V2-0351,sementes_estatistica,N (não reportado)
+V2-0590,clientes,não reportado
+V2-0590,orcamento,não reportado
+V2-0590,sementes_estatistica,N (não reportado)
+V2-0837,comparacao_nao_aprendida,aleatória (MM-FL-RND: modelos escravos atribuídos aleatoriamente)
+V2-0837,clientes,10 dispositivos veiculares
+V2-0837,orcamento,~3200 episódios; ε-greedy até 98% guloso
+V2-1178,clientes,"3 clientes (1 limpo, 2 maliciosos)"
+V2-1178,sementes_estatistica,N (não reportado)
+V2-1275,recompensa,ΔAcc − λ·Δrisco de privacidade (dado da acurácia não especificado)
+V2-1275,sementes_estatistica,N (não reportado)
+V2-1327,sementes_estatistica,P (média±dp reportados; nº de execuções não informado)
+V2-1327,comparacao_nao_aprendida,fixa (peso fixo 1/6 no mesmo framework de filtragem e votação)
+V2-2890,orcamento,20.000 episódios; ε-greedy
+V2-2890,sementes_estatistica,N (não reportado)
+V2-3175,recompensa,−Σ(custo de treino + custo de comunicação − reputação estrutural)
+V2-3175,clientes,30-200 nós; até 50% maliciosos
+V2-3175,sementes_estatistica,N (não reportado)
+V2-3555,comparacao_nao_aprendida,"P (ablação que troca o PPO por seleção heurística, sinal não especificado)"
+V2-3555,orcamento,200 rodadas; converge em ~80 episódios
+V2-3830,recompensa,"−ω1·Σ perda em (x_test, y_test) + iterações − lucro + reputação"
+V2-3830,vazamento_teste,S (perda no conjunto de teste na recompensa)
+V2-3830,sementes_estatistica,N (não reportado)
+V2-4233,codigo,S (github.com/Echolic/HFSL)
+V2-4233,vazamento_teste,S (o conjunto de desafio da verificação é amostrado do conjunto de teste)
+V2-4233,sementes_estatistica,N (não reportado)
+V2-0065,clientes,8 dispositivos benignos + 4 bizantinos (área circular de 1 km)
+V2-0065,sementes_estatistica,N (não reportado)
+V2-0111,sementes_estatistica,"N (não reportado; ""27/30"" é contagem de seleções da regra ótima)"
+V2-0350,recompensa,−log L(θ_g; D_val) (servidor); clientes com recompensa local
+V2-0350,vazamento_teste,N (validação)
+V2-0350,sementes_estatistica,"N (dp entre clientes, não entre sementes)"
+V2-0368,clientes,25-30 participantes; 10% maliciosos
+V2-0368,sementes_estatistica,N (não reportado)
+V2-0383,recompensa,κ^(δ̄−δ_t) − 1 (MAPE em validação retida) + aproximação das marcas de defeito calculadas em validação fixa no servidor
+V2-0383,vazamento_teste,N (validação no servidor)
+V2-0383,privacidade_sinal,conjunto de validação no servidor
+V2-0383,custo,S (tempo de execução reportado; GPU RTX 2080 Ti)
+V2-0383,clientes,10 clientes (empresas de energia); 10-90% defeituosos
+V2-0383,discutido_como_achado,"S (""desempenho da regra é quase o mesmo do DearFSAC"" nos casos 1 e 2; vantagem só em velocidade Tδ)"
+V2-0383,sementes_estatistica,N (não reportado)
+V2-0391,sementes_estatistica,"P (média de 25 execuções, sem variância)"
+V2-0391,custo,"S (tempo de reconhecimento ~1,9 ms)"
+V2-0391,clientes,10 dispositivos veiculares
+V2-0530,orcamento,"offline; lr 0,001, desconto 0,5, ε 1,0→0,05; ~60.000 episódios"
+V2-0530,sementes_estatistica,N (não reportado)
+V2-0495,clientes,10 dispositivos (parque de 400×400 m)
+V2-0495,sementes_estatistica,N (não reportado)
+V2-0506,vazamento_teste,N (conjunto de validação independente na RSU)
+V2-0506,privacidade_sinal,conjunto de validação na RSU
+V2-0506,sementes_estatistica,N (não reportado)
+V2-0542,recompensa,"N1·A(ω,p) (acurácia em validação) − N2·variância entre clientes"
+V2-0542,vazamento_teste,N (validação)
+V2-0542,privacidade_sinal,conjunto de validação
+V2-0542,custo,"S (Tab. V: overhead de computação, comunicação e armazenamento)"
+V2-0542,sementes_estatistica,N (não reportado)
+V2-0542,codigo,N
+V2-0550,sementes_estatistica,N (não reportado)
+V2-0550,vazamento_teste,? (servidores de borda e central avaliam o global no conjunto de teste; uso na recompensa não explícito)
+V2-0634,sementes_estatistica,N (não reportado)
+V2-0688,comparacao_nao_aprendida,"P (ablação do MAB na seleção de professores, Tab. VIII)"
+V2-0688,ataque_adaptativo,"S (Tab. IX: ataques adaptativos; atacantes conhecem agregação, lr e iterações)"
+V2-0688,codigo,N (só material suplementar)
+V2-0688,sementes_estatistica,N (médias entre clientes; sementes não reportadas)
+V2-0835,recompensa,−λT·T̂ − λρ·ρ̂ (tempo total + soma das reputações relativas)
+V2-0835,custo,P (só complexidade de inferência O(H·U·J))
+V2-0835,sementes_estatistica,N (não reportado)
+V2-1179,vazamento_teste,S (parte do conjunto de teste do servidor avalia os modelos locais e entra no estado e na recompensa)
+V2-1179,sementes_estatistica,N (não reportado)
+V2-1185,privacidade_sinal,dataset limpo e confiável no servidor
+V2-1185,vazamento_teste,N (dataset limpo do servidor)
+V2-1185,sementes_estatistica,"N (execuções determinísticas, sem variância entre sementes)"
+V2-1185,codigo,N
+V2-1199,vazamento_teste,"S (o conjunto de ""entrevista"" é 20% do conjunto de teste)"
+V2-1199,privacidade_sinal,dataset de entrevista no servidor (extraído do teste)
+V2-1199,sementes_estatistica,S (3 execuções com dp)
+V2-1229,sementes_estatistica,P (média de 2 sementes)
+V2-1229,codigo,N
+V2-1231,custo,"S (tempo por rodada +21,4% MNIST e +50,1% CIFAR-10 vs baselines; complexidade O(iters×M×imagens))"
+V2-1231,sementes_estatistica,N (não reportado)
+V2-1254,recompensa,acurácia do global num conjunto de validação justo e retido no servidor
+V2-1254,custo,S (tempo de execução no material suplementar)
+V2-1254,sementes_estatistica,N (não reportado)
+V2-1261,comparacao_nao_aprendida,aleatória (ablação que troca o módulo DRL por seleção aleatória)
+V2-1261,resultado_comparacao,"a seleção aleatória degrada o desempenho (Figs. 14-15, 10% e 30% de ataque)"
+V2-1261,sementes_estatistica,N (não reportado)
+V2-1261,custo,"P (só hardware; ""baixo custo"" sem números)"
+V2-1294,recompensa,impacto das ações na acurácia do global
+V2-1294,vazamento_teste,? (avaliação do impacto pela acurácia no conjunto de teste; uso na recompensa provável)
+V2-1294,sementes_estatistica,N (não reportado)
+V2-1363,orcamento,1000 rodadas por tarefa × 20 tarefas; 5 EDs por rodada
+V2-1363,clientes,5 EDs selecionados por rodada
+V2-1363,sementes_estatistica,N (não reportado)
+V2-1450,recompensa,acurácia de teste (soma das perdas no conjunto de teste) com restrição de atraso
+V2-1450,vazamento_teste,S (perda no conjunto de teste na recompensa)
+V2-1450,comparacao_nao_aprendida,aleatória (FL-Random) + seleção de todos os nós (FL-Greedy)
+V2-1450,resultado_comparacao,"acurácia estabiliza em 0,98 (DQN) vs 0,96 (Random, Greedy); latência −18%/−35%"
+V2-1450,sementes_estatistica,N (não reportado)
+V2-1483,sementes_estatistica,S (5 sementes; teste t pareado com Shapiro-Wilk)
+V2-1483,vazamento_teste,N (D_val)
+V2-2103,recompensa,"α·ΔACC − β·FPR − γ·FNR − δ·Var(w), (1; 2; 3; 0,5); FPR/FNR exigem saber quem é malicioso"
+V2-2103,vazamento_teste,"? (não usa teste, mas usa rótulos de malicioso, informação privilegiada)"
+V2-2103,orcamento,"25-30 rodadas (8 nos experimentos de revisão, com RL pré-aquecido e congelado); replay 1000, batch 32, γ 0,99, ε 1,0→0,1 (decaimento 0,995)"
+V2-2103,sementes_estatistica,"S (n=5 e n=3 sementes; IC 95%, tamanhos de efeito, testes pareados)"
+V2-2103,ataque_adaptativo,S (atacante adaptativo white-box degrada o detector mas não a acurácia)
+V2-2103,custo,"S (+8,8% de wall-clock vs FedAvg; 10,4% de overhead com 50 clientes)"
+V2-2103,comparacao_nao_aprendida,"P (ablação por componente, incluindo a remoção do RL)"
+V2-2103,resultado_comparacao,"o RL ""melhora a consistência da detecção"" em cenários dinâmicos; os maiores ganhos vêm do Shapley (10,16 p.p.) e do VAE (3,60 p.p.)"
+V2-2188,sementes_estatistica,"P (várias sementes, nº não informado; média ± IC 95%)"
+V2-2188,comparacao_nao_aprendida,"heurística com outro sinal (SAFE-GF-NOMA: agrupamento por similaridade de potência, sem detecção de anomalia)"
+V2-2188,custo,"S (memória <1,5 GB para 500 dispositivos; <3×10^6 multiplicações por rodada)"
+V2-2475,privacidade_sinal,conjunto de validação no servidor (pontuação de confiança)
+V2-2475,vazamento_teste,N (validação)
+V2-2475,resultado_comparacao,"CIFAR-10: Random 0,7978 vs UCB-acc 0,8481; UCB-CS e UCB-CS-acc selecionam quase tantos maliciosos quanto a seleção aleatória (Avg MC), como os próprios autores relatam"
+V2-2475,discutido_como_achado,S (os autores relatam que as variantes UCB-CS se comportam quase como a seleção aleatória em maliciosos selecionados)
+V2-2573,ataque_adaptativo,P (um dos quatro ataques é adaptativo)
+V2-2573,notas,orçamento ínfimo; as baselines não recebem o guard de norm-clipping que o DTAG-FL usa (admitido)
+V2-2891,recompensa,α·(Acc_m − Acc_all) + β·K (acurácia no dataset reservado do servidor)
+V2-3215,sementes_estatistica,"S (5 sementes, média±dp)"
+V2-3215,codigo,N (prometido após aceitação)
+V2-3215,ataque_adaptativo,N (ataques adaptativos declarados fora do escopo)
+V2-3215,orcamento,"aquecimento com seleção aleatória por T_warm rodadas; N=100, K=10, τ=5"
+V2-3243,vazamento_teste,N (validação proxy pública no servidor)
+V2-3243,privacidade_sinal,validação proxy pública no servidor
+V2-3243,custo,"S (1,86 s por rodada no servidor; 1592 MB de GPU, o maior entre os métodos)"
+V2-3265,vazamento_teste,"S (o comitê verifica a qualidade do modelo agregado no conjunto de teste, sinal da reputação)"
+V2-3265,comparacao_nao_aprendida,"P (ablação ""sem seleção de nós"": 30 provedores sem seleção)"
+V2-3265,sementes_estatistica,N (não reportado)
+V2-3331,privacidade_sinal,conjunto de validação no servidor (Shapley)
+V2-3331,comparacao_nao_aprendida,P (ablação: Shapley completo sem bandit)
+V2-3331,orcamento,"100 rodadas; exploração nas 40 primeiras (0,4T fixo); depois seleção por Shapley"
+V2-3331,custo,S (tempo total de execução de 100 rodadas por método)
+V2-3331,datasets_modelos,"Fashion-MNIST, CIFAR-10, NSL-KDD"
+V2-3331,sementes_estatistica,N (não reportado)
+V2-3494,sementes_estatistica,N (não reportado)
+V2-3789,sementes_estatistica,N (não reportado)
+V2-4266,vazamento_teste,N (pequeno conjunto de validação aleatório no servidor)
+V2-4266,privacidade_sinal,validação no servidor + evidências de confiança (votação)
+V2-4266,clientes,"K=20, N=4 por rodada; 3-7 maliciosos (~25%)"
+V2-4266,sementes_estatistica,N (não reportado)
+V2-4339,sementes_estatistica,N (não reportado)
+V2-4540,orcamento,30 rodadas FL; o DRL é treinado com dados gerados pelo método por escore
+V2-4540,sementes_estatistica,N (não reportado)
+V2-0918,recompensa,(l(θ_g^{t−1}) − l(θ_g^t)) − (l(θ_g^t) − l(θ_best)) com perda no root dataset do MEC
+V2-0918,sementes_estatistica,N (não reportado)
+V2-0922,orcamento,"~200 episódios até convergir; ε = 0,1 + 0,6·e^(−0,01t)"
+V2-0922,sementes_estatistica,"S (100 ensaios independentes; dp, IC 95%, ANOVA)"
+V2-0922,codigo,"P (declarado aberto, sem link)"
+V2-0940,clientes,K=10 clientes (célula de 500 m); 20% e 40% atacados
+V2-0940,sementes_estatistica,N (não reportado)
+V2-0946,orcamento,"lr do agente 0,5; pré-treino; demais não reportado"
+V2-0946,sementes_estatistica,N (não reportado)
+V2-0973,clientes,"10 servidores de borda, 300 clientes (e 3×10 em outro cenário)"
+V2-0973,sementes_estatistica,N (não reportado)
+V2-0987,privacidade_sinal,pequeno root dataset limpo no servidor + dataset FLMPID de treino do detector
+V2-0987,sementes_estatistica,N (não reportado)
+V2-1001,ataque_adaptativo,"P (o atacante escolhe gulosamente quantos veículos atacar, maximizando uma recompensa que depende da recompensa do servidor)"
+V2-1001,sementes_estatistica,N (não reportado)
+V2-1012,clientes,30 clientes; 6-15 maliciosos; Dirichlet
+V2-1012,sementes_estatistica,N (não reportado)
+V2-1012,codigo,N
+V2-1025,sementes_estatistica,N (não reportado)
+V2-1025,codigo,N
+V2-1030,sementes_estatistica,N (não reportado)
+V2-1030,custo,S (tempo de execução e energia analisados e medidos)
+V2-1030,ataque_adaptativo,P (ALMP troca periodicamente os dispositivos controlados para escapar da detecção)
+V2-1041,codigo,N (usa ferramentas abertas; sem repositório)
+V2-1041,sementes_estatistica,"S (5 repetições por configuração, média±dp)"
+V2-1042,vazamento_teste,"S (o servidor avalia cada modelo cliente num ""global test dataset"", entrada do estado e da recompensa; o texto também cita validação)"
+V2-1042,custo,S (análise de overhead computacional e de comunicação por rodada)
+V2-1042,sementes_estatistica,N (não reportado)
+V2-1057,sementes_estatistica,"S (3 sementes, média±dp)"
+V2-1057,codigo,N (só material suplementar)
+V2-1102,sementes_estatistica,"P (média de 15 execuções, sem variância)"
+V2-1103,sementes_estatistica,N (não reportado)
+V2-1105,sementes_estatistica,S (3 sementes; média com IC 95%)
+V2-1105,orcamento,"ε = 0,3; rede-alvo atualizada a cada C rodadas; desaprendizado na rodada 100; desaprendizado forçado por alarme externo (regra)"
+V2-1105,notas,híbrido: regra fixa (desaprendizado forçado quando há alarme) + DQN nos demais casos
+V2-1120,sementes_estatistica,N (não reportado)
+V2-1120,codigo,N
+V2-1120,custo,N
+V2-1126,privacidade_sinal,dataset limpo no servidor (reputação)
+V2-1126,vazamento_teste,N (dataset limpo do servidor)
+V2-1126,algoritmo,bandit adversarial Exp3 (RMCS)
+V2-1126,sementes_estatistica,N (não reportado)
+V2-1130,ataques,"envenenamento de modelo e de dados, free-riding (maliciosos com pesos aleatórios ou médios)"
+V2-1130,sementes_estatistica,N (não reportado)
+V2-1140,privacidade_sinal,dataset auxiliar no servidor (treino assistido)
+V2-1140,sementes_estatistica,N (não reportado)
+V2-0945,recompensa,"r = e^(γx) − 1, x = acurácia da fusão em validação retida (100 imagens por cliente)"
+V2-0945,sementes_estatistica,N (não reportado)
+V2-0945,ablacoes,estratégia FMFO e mecanismo de recompensa (Tabs. II e IV)
+SB-03,recompensa,tanh(a·ΔAcc + c·Δconv + p·Ψ) em validações privadas dos validadores; o teste é usado só para relatar
+SB-03,vazamento_teste,"N (validação privada; teste só para relato, declarado)"
+SB-03,sementes_estatistica,S (várias sementes com partições idênticas; média±dp)
+SB-03,privacidade_sinal,validação privada dos validadores (mineradores)
+V2-1327,clientes,10 participants (citados no texto)
+V2-1327,orcamento,não reportado
+V2-3175,orcamento,"rodadas/iterações citadas: 50, 100, 150, 500; hiperparâmetros do agente não reportados"
+V2-3830,datasets_modelos,"CIFAR-10, MNIST"
+V2-3830,clientes,9 devices (citados no texto)
+V2-3830,orcamento,rodadas/iterações citadas: 100; hiperparâmetros do agente não reportados
+V2-4233,orcamento,"rodadas/iterações citadas: 10, 20, 70, 100; hiperparâmetros do agente não reportados"
+V2-0065,datasets_modelos,MNIST
+V2-0065,orcamento,não reportado
+V2-0368,orcamento,não reportado
+V2-0530,clientes,não reportado
+V2-0495,datasets_modelos,MNIST
+V2-0495,orcamento,não reportado
+V2-0506,datasets_modelos,não identificado no texto
+V2-0506,clientes,"30 veículos (citado no texto), em grupos por comportamento"
+V2-0506,orcamento,"rodadas/iterações citadas: 15, 50; hiperparâmetros do agente não reportados"
+V2-0550,clientes,não reportado
+V2-0550,orcamento,"rodadas/iterações citadas: 20, 28, 50; hiperparâmetros do agente não reportados"
+V2-0634,datasets_modelos,MNIST
+V2-0634,clientes,não reportado
+V2-0634,orcamento,rodadas/iterações citadas: 40; hiperparâmetros do agente não reportados
+V2-0688,orcamento,"rodadas/iterações citadas: 30, 40, 80; hiperparâmetros do agente não reportados"
+V2-0835,orcamento,"rodadas/iterações citadas: 46, 80; hiperparâmetros do agente não reportados"
+V2-1179,datasets_modelos,"Fashion-MNIST, FMNIST, MNIST"
+V2-1185,orcamento,"rodadas/iterações citadas: 10, 15, 20, 30; hiperparâmetros do agente não reportados"
+V2-1199,codigo,N (nenhum link de código no texto)
+V2-1199,datasets_modelos,CIFAR-10
+V2-1199,orcamento,rodadas/iterações citadas: 20; hiperparâmetros do agente não reportados
+V2-1229,orcamento,rodadas/iterações citadas: 500; hiperparâmetros do agente não reportados
+V2-1231,clientes,100 clients (citados no texto)
+V2-1231,orcamento,"rodadas/iterações citadas: 200, 500; hiperparâmetros do agente não reportados"
+V2-1254,clientes,100 clients (citados no texto)
+V2-1254,orcamento,rodadas/iterações citadas: 50; hiperparâmetros do agente não reportados
+V2-1261,codigo,N (nenhum link de código no texto)
+V2-1294,codigo,N (nenhum link de código no texto)
+V2-1294,datasets_modelos,MNIST
+V2-1294,clientes,não reportado
+V2-1294,orcamento,rodadas e episódios na casa dos milhares (valores exatos ilegíveis na extração); hiperparâmetros do agente não reportados
+V2-1450,datasets_modelos,"CIFAR-10, MNIST"
+V2-1450,clientes,15 nodes; 40 nodes; 80 devices (citados no texto)
+V2-1450,orcamento,"rodadas/iterações citadas: 30, 100; hiperparâmetros do agente não reportados"
+V2-1483,codigo,N (nenhum link de código no texto)
+V2-1483,orcamento,"rodadas/iterações citadas: 20, 80; hiperparâmetros do agente não reportados"
+V2-2188,codigo,N (nenhum link de código no texto)
+V2-2188,datasets_modelos,"CIFAR-10, EMNIST"
+V2-2475,codigo,N (nenhum link de código no texto)
+V2-2573,codigo,N (nenhum link de código no texto)
+V2-3243,codigo,N (nenhum link de código no texto)
+V2-3243,orcamento,"rodadas/iterações citadas: 50, 300; hiperparâmetros do agente não reportados"
+V2-3265,codigo,N (nenhum link de código no texto)
+V2-3265,datasets_modelos,não identificado no texto
+V2-3331,codigo,N (nenhum link de código no texto)
+V2-3494,datasets_modelos,FMNIST
+V2-3494,clientes,não reportado
+V2-3789,clientes,não reportado
+V2-4059,clientes,100 nodes (citados no texto)
+V2-4266,codigo,N (nenhum link de código no texto)
+V2-4266,datasets_modelos,MNIST
+V2-4339,codigo,N (nenhum link de código no texto)
+V2-4339,clientes,10 clients; 50 clients (citados no texto)
+V2-4339,orcamento,não reportado
+V2-4540,datasets_modelos,MNIST
+V2-4540,clientes,50 nodes; 300 nodes (citados no texto)
+V2-0918,codigo,N (nenhum link de código no texto)
+V2-0918,clientes,20 vehicles (citados no texto)
+V2-0940,codigo,N (nenhum link de código no texto)
+V2-0940,datasets_modelos,MNIST
+V2-0946,datasets_modelos,não identificado no texto
+V2-0946,clientes,não reportado
+V2-0973,datasets_modelos,MNIST
+V2-0973,orcamento,não reportado
+V2-0987,orcamento,não reportado
+V2-1001,orcamento,rodadas/iterações citadas: 20; hiperparâmetros do agente não reportados
+V2-1012,datasets_modelos,CIFAR-10
+V2-1030,codigo,N (nenhum link de código no texto)
+V2-1030,orcamento,não reportado
+V2-1041,orcamento,não reportado
+V2-1042,clientes,não reportado
+V2-1042,orcamento,não reportado
+V2-1057,orcamento,"rodadas/iterações citadas: 10, 60, 100, 300; hiperparâmetros do agente não reportados"
+V2-1102,orcamento,não reportado
+V2-1103,orcamento,não reportado
+V2-1105,codigo,"N (o único link é do dataset AWE, não do código)"
+V2-1120,orcamento,rodadas/iterações citadas: 30; hiperparâmetros do agente não reportados
+V2-1130,codigo,N (nenhum link de código no texto)
+V2-1130,datasets_modelos,MNIST
+V2-1130,orcamento,não reportado
+V2-1140,codigo,N (nenhum link de código no texto)
+V2-1140,orcamento,rodadas/iterações citadas: 10; hiperparâmetros do agente não reportados
+V2-0945,orcamento,rodadas citadas: 800 e milhares; hiperparâmetros do agente não reportados
+V2-4727,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0160,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0837,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1178,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1275,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1327,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-2890,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-3175,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0065,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0391,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0530,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0495,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0634,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0688,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0835,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1229,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1231,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1261,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-2573,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-3215,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-3331,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-3494,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-3789,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-4059,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-4540,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0922,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0946,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0973,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-0987,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1001,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1012,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1025,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1030,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1057,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1103,vazamento_teste,? (o texto não diz em que dados a recompensa ou a seleção é calculada)
+V2-1483,resultado_comparacao,"ToN-IoT: H-FAR completo 94,60±0,72% vs ""sem HRL"" (seleção aleatória) 92,60±0,80% (+2,0 p.p.; 5 sementes)"
+V2-1105,resultado_comparacao,"habilitar o MARL melhora a ACC e reduz a ASR (Figs. 7b e 8b, sem números no texto)"
+V2-2890,resultado_comparacao,"sob 10/20/30% bizantinos: FedDrive-Sec 92,8/89,3/84,1% vs BlockFL (sem DRL) 89,2/82,6/73,4%"
+V2-3331,resultado_comparacao,ablação descrita; números da variante sem bandit não localizados no texto
+V2-1363,comparacao_nao_aprendida,nenhuma identificada no texto
+V2-0940,comparacao_nao_aprendida,fixa (canal fixo + seleção aleatória) + aleatória (Random)
+V2-1140,comparacao_nao_aprendida,heurística com outro sinal (Pow-d: perda local) + aleatória (amostragem uniforme); ideal sem free-riders como limite superior
+V2-1199,comparacao_nao_aprendida,heurística com outro sinal (Pow-d: perda local) + aleatória (FedAvg)
+V2-1199,resultado_comparacao,SRS ~99 vs Random ~59; Pow-d chega a SRS 0% no ataque Tipo 1 (escolhe só maliciosos)
+V2-0542,comparacao_nao_aprendida,heurística com outro sinal (Pow-d: perda local) + aleatória (Random)
+V2-0542,resultado_comparacao,FairRoP > Random em justiça e robustez; Pow-d colapsa quando atacantes inflam a perda
+V2-3243,comparacao_nao_aprendida,fixa (ablação w/o RFAS: Trimmed Mean fixo sobre os mesmos sinais)
+V2-3243,resultado_comparacao,"AUC 0,7765 (completo) vs 0,7051 (sem RFAS); 40% mal.: 0,7248 vs Flame 0,6915"
+V2-0835,comparacao_nao_aprendida,heurística com outro sinal (gulosa: 30% de UAVs com maior capacidade de computação) + aleatória
+V2-0835,resultado_comparacao,"DQN atinge o alvo em 22/42/46 rodadas, mais rápido que aleatória e gulosa; tempo total −56,6% vs aleatória e −29,1% vs gulosa"
+V2-1275,comparacao_nao_aprendida,oráculo (retreino do zero) + fixa (sem desaprendizado) + aleatória (desaprendizado aleatório)
+V2-1275,resultado_comparacao,"DQN ≈ retreino do zero em acurácia pós-desaprendizado e ASR, com custo menor (14 s vs 22 s); > aleatório e > sem desaprendizado"
+V2-1275,discutido_como_achado,P (relatam acurácia comparável ao retreino; vantagem só em custo)
+V2-2103,comparacao_nao_aprendida,"heurística com o mesmo sinal (regra fixa: pesos iguais 1/6 nos 6 sinais + limiar 0,5; Tab. 14) + ablação sem RL"
+V2-2103,resultado_comparacao,"acurácia final igual nas três condições (RL 64,32; sem RL 64,32; regra 64,35); F1 de detecção pós-ataque RL 61,7 vs regra 36,4, mas sem RL (só atenção) 61,1 ≈ RL; 3 sementes"
+V2-2103,discutido_como_achado,P (atribuem o ganho de detecção à atenção aprendida; não discutem o empate em acurácia nem RL ≈ sem RL)
+V2-3331,comparacao_nao_aprendida,heurística com o mesmo sinal (Shapley completo sem bandit) + variante sem truncamento
+V2-3331,resultado_comparacao,LBSFL 5-6% acima do Shapley completo e 2-3% acima da variante sem truncamento (Non-IID); tempo 45-65% menor
+V2-4059,comparacao_nao_aprendida,"heurística com outro sinal (AMA: pesos estáticos sobre confiança, qualidade e capacidade, sem o indicador de falha f_i que o RL recebe) + FedAvg"
+V2-4059,resultado_comparacao,"96,5% vs AMA 95,2% sem ataque; 20% de envenenamento: 93,2% vs AMA 72,0%; os autores atribuem a robustez ao f_i"
+V2-0350,comparacao_nao_aprendida,"fixa (Ditto com λ = 0,5 fixo; local-only, λ = 0; FedAvg); treino centralizado como limite superior"
+V2-0350,resultado_comparacao,"pFedMARL > FedAvg e Ditto com desbalanceamento e clientes adversários; reduz o peso dos corrompidos de ~0,5 para ~0,1"
+V2-1363,comparacao_nao_aprendida,"aleatória (VBA-only: mesma verificação, seleção aleatória)"
+V2-1363,resultado_comparacao,"VBA-only já mantém acurácia >97%; o DRL aumenta a utilidade (custo), não a robustez"
+V2-1363,discutido_como_achado,N
+V2-3215,comparacao_nao_aprendida,heurística com outro sinal (Power-of-Choice: perda local) + aleatória (ablação sem RL)
+V2-3215,resultado_comparacao,"CIFAR-10, 20%: 65,22 vs FedAvg 50,87 vs Pow-d 50,21; convergência no MNIST 10-13 vs 39-45 rodadas (sem RL: 45)"
+V2-0351,comparacao_nao_aprendida,"heurística com o mesmo sinal (seleção direta por reputação) + fixa (todos os colaboradores, FedAvg) + aleatória"
+V2-0351,resultado_comparacao,"+6,6 a 9,5 p.p. vs aleatória; todos os colaboradores caem a ~55% sob BTFD; seleção direta por reputação erra mais com usuários novos"
+V2-0837,comparacao_nao_aprendida,fixa (FL-GRU 28 e FL-GRU 32: estrutura fixa) + aleatória (MM-FL-RND)
+V2-0837,resultado_comparacao,"sob ataque, a estrutura fixa cai de 0,92 para 0,15 (época 6); aleatória +0,09; DRL ~0,85-0,92"
+V2-1178,comparacao_nao_aprendida,fixa (A-FSCNs: média simples 1/N)
+V2-1178,resultado_comparacao,"sem contaminação ≈; σ = 0,5: A-FSCNs −13,1% (MNIST) vs RL −0,7%; RMSE industrial +300% no A-FSCNs vs ~1/3 disso no RL"
+V2-0945,comparacao_nao_aprendida,fixa (FedAvg: pesos iguais) + exploração OU
+V2-0945,resultado_comparacao,"+4,7% médio vs FedAvg; com nós maliciosos FedAvg 2,2-6,6% vs R²Fed 42-45%"
+V2-1130,comparacao_nao_aprendida,fixa (MAO e PAO: auditar todos com um só método) + aleatória
+V2-1130,resultado_comparacao,CJR 91-95% (DRL-ASS) vs aleatória 83-88% vs SAC 87-91% (o SAC degenera em ação fixa)
+V2-0634,comparacao_nao_aprendida,aleatória (FedAvg com seleção aleatória de nós) + ablação sem PSA
+V2-0634,resultado_comparacao,20% mal.: 91% vs 85%; 50%: 84% vs 69% (local 52%); sem PSA 73%
+V2-0688,comparacao_nao_aprendida,"aleatória (Random KD: professores aleatórios, ablação do MAB)"
+V2-0688,resultado_comparacao,"ASR igual com e sem MAB; CA +2,8 a 3,9 p.p. com MAB só em Non-IID"
+V2-0688,discutido_como_achado,"S (atribuem a remoção do backdoor à destilação, não ao MAB)"
+V2-1030,comparacao_nao_aprendida,"fixa (sem detecção: todos os dispositivos) + baselines aprendidos (MAB-RFL, FedMarl)"
+V2-3265,comparacao_nao_aprendida,fixa (sem seleção de nós: todos os provedores)
+V2-3265,resultado_comparacao,"sem seleção a perda fica >0,2 após 40 iterações; 91,0 vs FLTrust 88,5"
+V2-4233,comparacao_nao_aprendida,P (Baseline HSFL: seleção aleatória e sem verificação)
+V2-4233,resultado_comparacao,"AlexNet Non-IID: 79,46% vs 24,52%"
+V2-1102,orcamento,"600 rodadas; 20 passos de atualização do DDPG por rodada, batch 64 (Adam)"
+V2-0973,orcamento,"100 rodadas; 20 passos de treino por rodada; lr ator 0,001 e crítico 0,01; replay 1e6; γ 0,99"
+V2-2188,orcamento,100 rodadas; PPO com trajetórias de 50 passos e 32 trajetórias por atualização
+V2-1483,orcamento,"T ∈ {50, 100, 150, 200} rodadas; ε 0,25→0,05 em 80 rodadas"
+V2-2891,orcamento,100 rodadas FL; 8.000-25.000 passos de treino do RL (conforme o nº de agentes)
+V2-0542,orcamento,"100 rodadas; ε 0,8 com decaimento geométrico 0,9"
+V2-0350,orcamento,100 rodadas; lr ator 1e-2 e crítico 1e-4; ruído de exploração decrescente
+V2-1254,orcamento,200 rodadas; DDPG online (hiperparâmetros do agente fora do texto principal)
+V2-0835,orcamento,"80 rodadas; DQN lr 0,01, γ 0,9, batch 50 do replay, ε 0,9→0,2-0,35"
+V2-1041,orcamento,"~100 iterações até estabilizar; ator-crítico lr 0,005, γ 0,99, 3 camadas de 256"
+V2-1012,orcamento,"200 rodadas; DQN lr 0,001 (Adam), ε com decaimento, γ 0,9 (vs 0,5)"
+V2-3830,orcamento,"DQN: 1.000 passos, lr 1e-4, replay 10k, rede-alvo a cada 100 passos, γ 0,9; 30-100 rodadas FL"
+V2-1001,orcamento,"600-1.800 slots; lr do RL 0,008 (Adam), batch 32 (buffers seguro e arriscado), γ 0,8"
+V2-1199,orcamento,200 rodadas (20 de aquecimento); 60 passos de gradiente do bandit neural por rodada
+V2-0918,orcamento,50 (MNIST/FMNIST) e 100 (CIFAR-10) rodadas; DDPG (Adam) com aquecimento
+V2-0688,orcamento,40 rodadas; ε linear de 1 a 0
+V2-1103,orcamento,"DQN pré-treinado offline (~5.000 episódios, lr 0,01, 2 camadas de 24) e implantado online; ~15 rodadas FL"
+V2-0590,orcamento,"100 épocas FL; TD3 lr ator 0,001 e crítico 0,01"
+V2-1130,orcamento,"1.000 passos de treino; lr ator 1e-4 e crítico 1e-5; γ 0,95; 100 rodadas FL"
+V2-0506,orcamento,"50 rodadas; DDQN: 45 passos por episódio, replay 45.000, batch 256, lr 0,001, γ 0,9"
+V2-3215,orcamento,"aquecimento aleatório de 50 rodadas; PPO com 10 épocas por atualização, lr ator 1e-4 e crítico 3e-4, γ 0,99"
+V2-0634,orcamento,"LSTM-DDPG: 100 episódios, 100 passos por ação, batch 64, replay 1e6, lr ator 1e-4 e crítico 1e-3 (Adagrad), γ 0,9; 500 rodadas FL"
+V2-0987,orcamento,50 rodadas; RL ativado a cada 5ª rodada (~10 atualizações); ε com decaimento exponencial
+V2-1450,orcamento,"DQN: 1.000 passos, batch 64, replay 10k, rede-alvo a cada 100 passos, γ 0,9"
+V2-3243,orcamento,"300 rodadas; PPO lr 3e-4, γ 0,99, pré-treino offline em proxy e 20 rodadas observadoras"
+V2-4059,orcamento,"20 rodadas; Q-learning α 0,1, γ 0,9, ε com decaimento 0,99"
+V2-0495,orcamento,100 iterações; 1 passo de DQN por rodada
+V2-1103,modo,pré-treino offline + implantação online
+V2-1483,analise_horizonte,N (varia T ∈ {50..200} só para o próprio método)
+SB-03,analise_horizonte,N (varia T de 50 a 500 só para o próprio método)
+V2-3555,privacidade_sinal,validação global no servidor (ΔAcc da recompensa); vetores cinemáticos enviados à RSU
+V2-0973,privacidade_sinal,conjunto de teste no servidor (F1 da recompensa; partição de 20%)
+V2-1025,privacidade_sinal,conjunto de validação no servidor (recompensa) + métricas mascaradas (SCFM)
+V2-1483,privacidade_sinal,conjunto de controle D_ctrl e validação D_val no servidor
+V2-1042,privacidade_sinal,conjunto de teste no servidor (global test dataset avalia cada modelo)
+V2-1275,privacidade_sinal,conjunto de teste no servidor (Δacurácia da recompensa)
+V2-4233,privacidade_sinal,"conjunto de desafio no servidor, amostrado do teste"
+V2-0835,privacidade_sinal,conjunto de teste no servidor (10.000 imagens; qualidade e reputação)
+V2-1041,privacidade_sinal,só updates (metadados de infraestrutura; HE aditiva)
+V2-0837,privacidade_sinal,dataset não rotulado no servidor MEC (2.400 amostras)
+V2-1057,privacidade_sinal,só updates (compatível com LDP)
+V2-0368,privacidade_sinal,conjunto de validação no servidor (recompensa e pre-accuracy)
+V2-3830,privacidade_sinal,conjunto de teste no servidor (perda na recompensa)
+V2-1001,privacidade_sinal,conjunto de teste/validação no servidor de borda
+V2-0550,privacidade_sinal,conjunto de teste/validação nos servidores (acurácia global GA)
+V2-0590,privacidade_sinal,conjunto de teste no nó central (recompensa)
+V2-0922,privacidade_sinal,só updates (LDP + HE leve)
+V2-3215,privacidade_sinal,conjunto de validação global no servidor (ganho Y_t)
+V2-1294,privacidade_sinal,"dataset proxy no servidor, formado com frações de dados brutos dos clientes"
+V2-4339,privacidade_sinal,só updates (sem dado no servidor)
+V2-1450,privacidade_sinal,conjunto de teste no servidor (recompensa)
+V2-4059,privacidade_sinal,conjunto de validação no servidor (termo de acurácia) + SMPC/DP
+V2-0351,privacidade_sinal,conjunto de validação no servidor (utilidade da recompensa)
+V2-0945,privacidade_sinal,só updates (+ acurácia em validação local de cada cliente)
+V2-2573,privacidade_sinal,"conjunto de validação no servidor (contrafactual, estado e recompensa)"
+V2-1185,privacidade_sinal,dataset limpo no servidor + conjunto de teste global (métricas por modelo)
+V2-0973,vazamento_teste,S (F1 na partição de teste do servidor)
+V2-1275,vazamento_teste,S (Δacurácia no conjunto de teste)
+V2-0835,vazamento_teste,S (acurácia no conjunto de teste padrão)
+V2-1012,vazamento_teste,S (o mesmo teste local mede a recompensa e o resultado)
+V2-1001,vazamento_teste,S (o sinal de aviso usa o teste)
+V2-0550,vazamento_teste,S (GA medido no teste)
+V2-1261,vazamento_teste,S (acurácia de teste no estado e na recompensa)
+V2-1185,vazamento_teste,S (métricas de cada modelo no conjunto de teste global)
+V2-1103,vazamento_teste,P (a recompensa usa a acurácia global GMA; partição não informada)
+V2-2475,vazamento_teste,P (validação do TBA sorteada do pool de teste; a recompensa do bandit usa acurácia local)
+V2-1199,vazamento_teste,"P (conjunto de entrevista retirado do pool de teste, disjunto da avaliação final)"
+V2-2103,vazamento_teste,"N (não usa teste; a recompensa usa rótulos de malicioso, FPR/FNR: informação privilegiada)"
+V2-4728,vazamento_teste,N (validação; a recompensa usa rótulos de malicioso: informação privilegiada)
+V2-0837,vazamento_teste,N (perda de treino + latência)
+V2-0391,vazamento_teste,N (perda de treino local)
+V2-1057,vazamento_teste,N (similaridade interna dos updates)
+V2-3331,vazamento_teste,N (validação no servidor; teste separado)
+V2-0688,vazamento_teste,N (mini-batches de treino locais)
+V2-0634,vazamento_teste,N (perdas locais)
+V2-1231,vazamento_teste,N (perda de treino)
+V2-1178,vazamento_teste,N (perdas de treino locais)
+V2-0065,vazamento_teste,N (perda de treino local)
+V2-4727,vazamento_teste,N (propriedades do grafo e divergências)
+V2-0495,vazamento_teste,N (perda nos dados de treino)
+V2-1030,vazamento_teste,N (perda do mini-batch de treino)
+V2-1229,vazamento_teste,N (testes de cosseno e momentum)
+V2-2573,vazamento_teste,N (validação no servidor)
+V2-1120,sementes_estatistica,P (dp reportado; nº de sementes não informado)
+V2-0542,sementes_estatistica,P (média±dp; nº não informado)
+V2-1126,sementes_estatistica,"S (5 execuções, média±dp)"
+V2-1254,sementes_estatistica,P (média(dp); nº de sementes no apêndice)
+V2-1001,sementes_estatistica,"P (3 a 5 repetições, sem barras de erro)"
+V2-3331,sementes_estatistica,"P (5 sementes, só a média)"
+V2-1130,sementes_estatistica,"P (média de 100 execuções, sem variância)"
+V2-1057,codigo,P (material suplementar do periódico)
+V2-0688,codigo,P (material suplementar do periódico)
+V2-1041,algoritmo,"ator-crítico (3×256; superou DQN, A3C, Q-learning e SARSA)"
+V2-0590,algoritmo,TD3
+V2-1103,estado,"(MC, TC, GMA): modelos maliciosos detectados, modelos confiáveis, acurácia global"
+V2-1103,recompensa,GMA_{t+1} se há detecção ou a acurácia não cai; 0 caso contrário
+V2-1294,sinal,matriz de updates (n×d)
+V2-1294,estado,matriz de updates (n×d)
+V2-1294,recompensa,+10/−10/0 conforme a acurácia no proxy do servidor
+V2-1229,sinal,testes de cosseno e momentum
+V2-1229,recompensa,"binária (1 benigno, 0 malicioso) por testes de cosseno e momentum"
+V2-3265,recompensa,−latência total de computação e comunicação
+V2-0590,memoria,S (confiança persistente)
+V2-0368,memoria,S (regra de 3 advertências)
+V2-0987,memoria,S (reputação acumulada)
+V2-0111,comparacao_nao_aprendida,oráculo (melhor regra a posteriori; escolhe a ótima em 27/30) + fixa (cada regra isolada)
+V2-3494,doi_arxiv,10.1007/978-981-96-2409-6_37
+V2-3494,clientes,100 clientes; participação proporcional (fração não informada); 10–50% maliciosos
+V2-3494,privacidade_sinal,"conjunto de dados no servidor, não especificado (acurácia do modelo global na recompensa)"
+V2-3494,notas,"capítulo 37 do livro 978-981-96-2409-6; fichado pelo R1 em 16/10/2026 (A18). QP2 mantida ""nenhuma"": FedAvg, Krum e MKrum são agregadores sem o filtro por distância que precede o agente, fora do espaço de ação"
+V2-0351,orcamento,"~1500 episódios; Q-learning λ (lr) 0,2, ζ (γ) 0,85, ε inicial 0,2 com decaimento ρ 0,00925 (Sec. V-C); T_set e l da Eq. 24 não informados"
+V2-1178,comparacao_nao_aprendida,nenhuma (A-FSCNs com média simples 1/N não faz ação defensiva; A20)
+V2-0945,comparacao_nao_aprendida,nenhuma (FedAvg não faz ação defensiva; a exploração OU é do próprio agente; A20)
+V2-1030,comparacao_nao_aprendida,"nenhuma (todos os dispositivos, sem detecção, não faz ação defensiva; baselines aprendidos MAB-RFL e FedMarl; A20)"
+V2-3265,comparacao_nao_aprendida,"nenhuma (todos os provedores, sem seleção, não faz ação defensiva; A20)"
+V2-0837,comparacao_nao_aprendida,aleatória (MM-FL-RND); a estrutura FL-GRU 28/32 mantida sem mutação não faz ação defensiva (A20)
+V2-0940,comparacao_nao_aprendida,"aleatória (Random; a referência ""Fixed"" é canal fixo com seleção aleatória, sem ação defensiva; A20)"
+V2-0350,resultado_comparacao,"Tab. 1: o local-only (λ = 0 fixo) supera o pFedMARL em F1 nos três cenários (QS L 0,84 × 0,77; LS L 0,92 × 0,87; CS L 0,98 × 0,96) e iguala o MSE; Tab. 2: servidor pFedMARL > Ditto (λ = 0,5) e FedAvg (F1 0,22-0,61 × 0,07-0,22); dp entre clientes, não entre sementes"
+V2-1130,resultado_comparacao,"CJR > 0,9 (HiAudit/DRL-ASS) × 0,55-0,60 (MAO, auditoria fixa só do modelo); PAO (auditoria fixa de parâmetros) mantém RE alto e constante; aleatória 83-88% × 91-95%; média de 100 execuções, sem variância (Sec. V, Figs. 9-11)"
+V2-2573,recompensa,"r = 5·Δacc + 1,5·(−Δloss) − 0,75·(massa de peso maliciosa) − 0,05·(override do escudo) (Eq. 7); o conjunto de Δacc e Δloss não é declarado; a massa maliciosa usa o rótulo verdadeiro dos clientes (oráculo)"
+V2-2573,vazamento_teste,"? (o conjunto de Δacc e Δloss da recompensa não é declarado; o contrafactual usa L_val, Eq. 5; A20)"
+V2-2573,notas,"orçamento ínfimo; as baselines não recebem o guard de norm-clipping que o DTAG-FL usa (admitido); a recompensa penaliza a massa de peso dos maliciosos, o que exige o rótulo verdadeiro (informação de oráculo, como no V2-4728)"
+V2-1041,comparacao_nao_aprendida,"nenhuma (a ablação ""resource mutation disabled"", Tab. XII, remove a MTD sem pôr decisão defensiva no lugar: ASR 13,6% × 1,2%; aleatória, round-robin e gulosa ficam para trabalho futuro, Secs. VI-A e XI-B; A20)"
+V2-2890,comparacao_nao_aprendida,"nenhuma (BlockFL, ""blockchain-enabled FL without DRL adaptation"", é baseline externo, sem decisão substituta descrita no espaço de ação do agente; A20)"
+V2-4233,comparacao_nao_aprendida,"aleatória (HSFL original: o servidor seleciona os UEs ao acaso, sem a verificação do S-HSFL; o ganho mistura seleção e verificação; A20)"
+V2-4339,ataque_adaptativo,"S (Sec. 5.1: o adversário conhece o MAB-RFL e divide os clientes maliciosos, metade com o g̃ do AGRT e metade copiando um update benigno, para escapar do ISA, Alg. 4; o g̃ é otimizado contra o Krum; A20)"
+V2-4540,resultado_comparacao,"empate: o escore iguala ou supera o híbrido na acurácia (Figs. 9–11, rodadas finais; escalabilidade ~93 × ~95; robustez, 60% desonestos, ~88 × ~87,5; disponibilidade, 60% de dropout, ~91,5 × ~87); o DRL puro perde para o escore nos três regimes (~89,5, ~70, ~84,5); execução única"
+V2-4540,notas,"um dos poucos com heurística de mesmo sinal; o caso mais próximo de ""já mostrado"": os autores atribuem a robustez ao próprio escore (Sec. 8.2, Cenário 2) e defendem o híbrido por adaptabilidade e imprevisibilidade, sem ataque adaptativo; o ""híbrido > escore"" anterior vinha do texto, e não das figuras (consenso QP2 com o R2)"
+V2-1102,resultado_comparacao,"vitória estreita: o DDPG supera o SLM com limiar estático em todos os regimes (k = 5: 0,89 × 0,86; k = 10: 0,68 × 0,62; Fig. 4, cinco taxas de envenenamento, ~+6 a 8 p.p., média de 15 execuções sem variância); o DQN fica abaixo do limiar estático com k = 10 (0,53 × 0,62); o ""almost similar"" dos autores vale só para k = 5"
+V2-1102,notas,"EVIDÊNCIA PORTÃO N retirada: o empate anterior vinha do texto dos autores (""almost similar""), e os números mostram vantagem do DDPG em todos os regimes (consenso QP2 com o R2); substitui V2-1038"
+V2-1179,resultado_comparacao,"empate: sob ataque fraco, DDPG × φ = 1 fixo é 0,941 × 0,923 e 0,960 × 0,944 com k = 5, mas 0,949 × 0,938 e 0,966 × 0,955 com k = 10 (+1,1 p.p.); sob ataque forte, ""essentially similar"" (Fig. 3, sem valores); sem ataque, DDPG ≈ φ = 0 fixo (Fig. 4); iguala a melhor fixa de cada regime"
+V2-0351,comparacao_nao_aprendida,"heurística com o mesmo sinal (seleção direta: combinação de maior reputação histórica, sem refazer a busca por Q-learning; Sec. IV-C, Fig. 9) + sem defesa (todos os colaboradores) + aleatória"
+V2-0351,resultado_comparacao,"vitória estreita contra a seleção direta (taxa de erro, Fig. 9, L = 6, iterações 35–45: K = 8 ~0,03 × ~0,04; K = 10 ~0,035 × ~0,07; K = 15 ~0,06 × ~0,12; execução única); contra a aleatória, +6,6 a 9,5 p.p.; todos os colaboradores caem a ~55% sob BTFD"
+V2-0351,discutido_como_achado,"S (""the strategy we advocate""; o resultado ""illustrates the importance of relearning when authenticating new users"", Sec. IV-C)"
+V2-2103,notas,"substitui V2-4818 (arXiv); métrica principal (A21): acurácia final, empate (Tab. 14); o Det-F1 pós-ataque é secundário e favorece o agente (61,7 × 36,4), mas o ganho vem da atenção (sem RL 61,1); a acurácia não separa nem o FedAvg sem defesa (64,30)"
+V2-1327,notas,"EVIDÊNCIA PORTÃO N; métrica principal (A21): acurácia no rótulo envenenado, porque o ataque troca os rótulos para um valor único (exceção do ataque dirigido); a acurácia em todos os rótulos (MNIST 87,24/89,03 × 82,90; CIFAR-10 65,07/65,71 × 60,91) é secundária e reflete o ganho no rótulo especial (66,28/73,67 × 2,67), que é inclusão de dados raros e não defesa (Tab. 2)"
+V2-3331,notas,"métrica principal (A21): acurácia; o tempo (−45 a 65%) é secundário; a ablação (Figs. 8–9) roda sem ataque, só com Non-IID e Long-Tailed; o 5734 ms é do experimento de taxa de amostragem (Fig. 10), não da ablação"
+V2-0160,discutido_como_achado,"S (Seção ""Ablation: Justifying the Contribution of the Agentic Controller"", Seção ""Discussion and Insights for 6G Standardization"", Tabela 1(b); A21, §2.5)"
+V2-0391,discutido_como_achado,"S (Seção IV e Figura; A21, §2.5)"
+V2-0550,discutido_como_achado,"S (Seção V-A, V-B, V-C, V-E (págs. 3701–3706) e Seção VI (pág. 3706).; A21, §2.5)"
+V2-0837,discutido_como_achado,"S (Seção VI (parágrafo 7, p. 1741).; A21, §2.5)"
+V2-0940,discutido_como_achado,"S (Resumo (Abstract), Seção IV-B, Seção V; A21, §2.5)"
+V2-0973,discutido_como_achado,"S (Resumo, Seção V-B, Seção VI (págs. 1274, 1281–1283); A21, §2.5)"
+V2-1012,discutido_como_achado,"S (Resumo, Seção I (Contribuição 5), Seção IV-B, Seção V.; A21, §2.5)"
+V2-1102,discutido_como_achado,"S (Resumo, Seção I, Seção V-B (pp. 21980–21981), Seção VI; A21, §2.5)"
+V2-1105,discutido_como_achado,"S (Seção IV-E (último parágrafo), Figuras 7(b) e 8(b); A21, §2.5)"
+V2-1126,discutido_como_achado,"S (Seção VII-B, Seção VIII; A21, §2.5)"
+V2-1140,discutido_como_achado,"S (Seções V-B1, V-B3, V-B4, V-B5 e Seção VI (Conclusion).; A21, §2.5)"
+V2-1261,discutido_como_achado,"S (Seção 5.2.5.; A21, §2.5)"
+V2-1275,discutido_como_achado,"S (Seção 6.2 e Seção 8; A21, §2.5)"
+V2-1363,discutido_como_achado,"S (Seção ""NUMERICAL RESULTS"" (p. 345–346, parágrafos 3 a 5).; A21, §2.5)"
+V2-1483,discutido_como_achado,"S (Seção 4.2.2; A21, §2.5)"
+V2-3243,discutido_como_achado,"S (Seção Results and analysis, subseção Core mechanism ablation study (págs. 14–15) e Seção Conclusion (pág. 20); A21, §2.5)"
+V2-3331,discutido_como_achado,"S (Seção 5.3 (1) [pág. 21], Seção 6 [págs. 24–25]; A21, §2.5)"
+V2-3555,discutido_como_achado,"S (Seção 4.2.; A21, §2.5)"
+V2-3789,discutido_como_achado,"S (Seções ""Model performance evaluation"", ""Cumulative waiting time"", ""Malicious node attack"", ""Model poisoning attack"", ""Conclusion""; A21, §2.5)"
+V2-4059,discutido_como_achado,"S (Seções III-A, III-D, IV-B a IV-G, Seção V-A (Discussão) e Seção VI (Conclusão).; A21, §2.5)"
+V2-4233,discutido_como_achado,"S (Seção 6.2; Abstract; Highlights; A21, §2.5)"
+V2-4727,discutido_como_achado,"S (Seção V-A, V-B, V-C e Seção VI; A21, §2.5)"
+V2-4728,discutido_como_achado,"S (Seção 4.3, Seção 5, Tabela 1, Figura 3; A21, §2.5)"
+V2-0111,discutido_como_achado,"S (a UCB escolhe a regra ótima em 27-28 de 30 rodadas e ""maintains performance comparable to it"", Sec. IV, RQ1-RQ2, Tab. II)"
+V2-0350,discutido_como_achado,"S (o local-only ""excels in personalization"" e o pFedMARL ""converges towards local-only training ... yet falling short on local data due to the adversarial influence"", Sec. 5); Portão N: reconhece que a ação fixa supera o agente no local, mas enquadra como troca entre personalização e generalização"
+V2-0542,discutido_como_achado,"S (o Pow-d ""display[s] vulnerabilities"" ao envenenamento da perda, Sec. VI-B e VI-C)"
+V2-0835,discutido_como_achado,"S (a Myopia ""prioritizes UAVs with high computing performance but neglects data diversity""; −29,1% de tempo total, Sec. V-C)"
+V2-1130,discutido_como_achado,"S (o MAO tem RE menor com poucos maliciosos, mas o RE ""increases markedly"" com mais; CJR 0,55-0,60, Sec. VI-B, Fig. 9)"
+V2-1199,discutido_como_achado,"S (o Pow-d e o AFL ""exhibit enhanced performance, approaching the benchmark set by FANS"" sob o ataque tipo 2, Sec. 5.4)"
+V2-1450,discutido_como_achado,"S (o FL-Random cai a ~0,95 com muitos maliciosos, ""comparable to ... Local Training"", Sec. 5.2, Fig. 3)"
+V2-3215,discutido_como_achado,"S (o Power-of-Choice é ""susceptible to attackers that report artificially high losses"", Sec. 4.3, Tab. 5)"
+V2-4266,discutido_como_achado,"S (o UCB-SCP ""is very close to the ideal secure-UCB"" em convergência, Sec. 6.3)"
+V2-1327,discutido_como_achado,"S (Secs. 5.2, 5.3.1, 5.3.2 e 5.4.3: os pesos do DRL ""are generally larger"" que o fixo e incluem o rótulo especial); Portão N: não reconhece o empate no rótulo envenenado"
+V2-2103,discutido_como_achado,"S (""Mean accuracy is identical with and without RL (64.32%)""; o papel do RL é ""detection consistency ... rather than accuracy improvement"", Tab. 14); Portão N: reconhece a igualdade e reposiciona o RL como consistência da detecção"
+V2-4789,discutido_como_achado,S (Secs. 6.2-6.4 e 7.1-7.3 discutem os braços isolados); Portão N: não reconhece o empate com a Mediana nem a vitória do FedAvg sob ataque furtivo
+V2-1179,discutido_como_achado,"S (""essentially similar regardless of whether the attacker adopts low-intensity attack or high-intensity attack"", Sec. 5.2); Portão N: reconhece a igualdade com o φ = 1 fixo e enquadra como virtude: o agente acha sozinho a melhor fixa de cada regime"
+V2-4540,discutido_como_achado,"S (Figs. 9–11); Portão N: atribui a robustez ao escore, mas defende o híbrido pela adaptabilidade e pela imprevisibilidade"
+V2-4812,discutido_como_achado,"S (o ajuste manual do limiar de norma é discutido: o limiar apertado prejudica a utilidade e o frouxo não barra o backdoor, e o ajuste ""is nearly impossible"" em FL real, Sec. IV, Tab. 8)"
+V2-1041,discutido_como_achado,"N (sem comparação não aprendida; os autores admitem a falta de aleatória, round-robin e gulosa como trabalho futuro, Secs. VI-A e XI-B)"
+V2-0634,discutido_como_achado,"S (""Since FedAvg and Local Training lack the capability to defend against poisoning attacks, their loss functions consistently remain higher"", Sec. V, Figs. 6–7)"
+V2-2188,discutido_como_achado,"S (o SAFE-GF-NOMA ""achieves efficiency at the expense of adversarial robustness"" e ""reduce[s] collisions but fail[s] under poisoning""; +15 a 20% de acurácia, Sec. 5.2)"
+V2-2573,discutido_como_achado,"S (as regras fixas caem a 17,9% e ""never recover, because a fixed rule fed a persistent 25% multi-type poison stream has no mechanism to adapt"", Sec. 3.3.1, Fig. 2)"
+V2-1120,discutido_como_achado,"P (a comparação com as regras fixas aparece só nas Tabs. II–V e no resumo, ""surpassing FLTrust and SARA by at least 2.5% and 3.6%""; a Sec. VI não comenta os resultados e diz que os números são ""consistent with cited literature or derived by careful synthesis of referenced figures"")"
+V2-2188,comparacao_nao_aprendida,"nenhuma (o SAFE-GF-NOMA é um método de outro artigo, com agrupamento por potência para colisões e FedAvg depois da decodificação, sem ação defensiva contra envenenamento, Tab. 5; os demais baselines são o PPO-only, o CA-PPO e agregadores externos; A21, como o R2)"
+V2-2188,discutido_como_achado,"N (sem comparação não aprendida; o SAFE-GF-NOMA é discutido como baseline externo, Sec. 5.2)"
+V2-4266,comparacao_nao_aprendida,"aleatória (seleção uniforme de N dispositivos); o secure-UCB ""ideal"" é o CS-UCB aprendido numa rede sem atacantes, um baseline aprendido, sem informação privilegiada sobre os atacantes (Sec. 6.3; A21, como o R2)"
+V2-4266,resultado_comparacao,"UCB-SCP > Random e CS-UCB; ≈ secure-UCB ideal (baseline aprendido, limite superior)"
+V2-3243,comparacao_nao_aprendida,"P (ablação w/o RFAS: o texto só diz ""systematically removing a specific module"", sem a regra que substitui o RFAS; o Trimmed Mean é o fallback das 20 rodadas de aquecimento, não a variante da ablação; GECT e GDPC continuam agindo; A21, como o R2)"
+V2-3243,resultado_comparacao,"AUC 0,7765 (completo) vs 0,7051 (sem RFAS); 40% mal.: 0,7248 vs Flame 0,6915"
+V2-3331,comparacao_nao_aprendida,"P (ablação ""Shapley"": ""Full Shapley value computation without the Bandit strategy"", sem dizer que seleção substitui o bandit; + variante sem truncamento; Sec. 5.3; A21, como o R2)"
+V2-1275,comparacao_nao_aprendida,oráculo (retreino do zero) + sem ação defensiva (sem desaprendizado; A20) + aleatória (desaprendizado aleatório)
+SB-03,sementes_estatistica,"P (várias sementes com partições idênticas; média±dp; o número de sementes não é informado, e o livro exige ≥ 3 para S, como no V2-1327)"
+V2-0160,codigo,"S (github.com/pranav21684/AGENTIC-AI-UNLEARNING, para onde o link do artigo redireciona; notebooks com o agente e os ataques; A24)"
+V2-0987,codigo,"P (o artigo cita github.com/Aquarids/Flmpid-pub, que não existe em 22/10/2026 nem aparece entre os repositórios do autor; declarado, sem acesso; A24)"
+V2-1042,codigo,"P (github.com/cry-C/SecureGraphFL tem o agente actor-critic e o FL, mas não a simulação dos clientes maliciosos ou falhos; incompleto; A24)"
+V2-0688,codigo,N (o suplemento IEEE é descrito como apêndice com detalhes do ataque; o artigo não declara código; A24)
+V2-1057,codigo,N (o suplemento IEEE contém apêndices com figuras e provas; o artigo não declara código; A24)
+V2-0111,comparacao_nao_aprendida,"fixa (cada regra isolada: Krum, TrimmedMean, Median) + oráculo (melhor regra a posteriori; escolhe a ótima em 27/30) (A27)"
+V2-0111,resultado_comparacao,"empata com a melhor regra fixa: comparável à Median no ataque periódico (MNIST e CIFAR-10) e ao Krum no ataque de fingimento no MNIST; supera o Krum no CIFAR-10 a partir da época 5, só em figura (Sec. IV, RQ1); ≈ oráculo: escolhe a regra ótima em 27-28/30 (Tab. II) (A27)"
+V2-0111,discutido_como_achado,"S (""SARA consistently selects the optimal aggregation rule and maintains performance comparable to it"", Sec. IV, RQ1); Portão N: reconhece a igualdade com a melhor regra fixa e enquadra como virtude: o agente acha sozinho a regra ótima de cada regime (A27)"

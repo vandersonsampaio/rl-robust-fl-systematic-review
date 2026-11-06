@@ -1,0 +1,52 @@
+\begin{table}[!ht]
+  \centering
+  \caption{Quality-assessment profile of the included studies.}
+  \label{tab:qa-agregado}
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.12}
+  \begin{tabularx}{\columnwidth}{@{}
+    >{\raggedright\arraybackslash}p{2.25cm}
+    >{\raggedright\arraybackslash}X
+    r r r
+    >{\centering\arraybackslash}p{2.0cm}
+    @{}}
+    \toprule
+    Dimension & Criterion & 1 & 0.5 & 0 & \makecell{Unreported\\among 0} \\
+    \midrule
+
+    \multirow{2}{2.25cm}{Experimental validity}
+      & QA1 No test-set use in reward or selection
+      & 38 & 20 & 19 & 0 \\
+      & QA5 Comparison with a non-learned policy
+      & 15 & 30 & 32 & --- \\
+
+    \midrule
+    \multirow{2}{2.25cm}{Statistical rigor}
+      & QA2 $\geq 3$ seeds with reported variability
+      & 13 & 12 & 52 & 47 \\
+      & QA3 Statistical test or confidence interval
+      & 7 & 0 & 70 & --- \\
+
+    \midrule
+    Reproducibility
+      & QA4 Code availability
+      & 9 & 3 & 65 & --- \\
+
+    \midrule
+    Reporting quality
+      & QA7 Quantifiable learning budget
+      & 22 & 47 & 8 & 8 \\
+
+    \midrule
+    \multirow{3}{2.25cm}{Security evaluation adequacy}
+      & QA6 Attack fidelity to original definitions
+      & 2 & 72 & 3 & 0 \\
+      & QA8 Strong static defenses as baselines
+      & 10 & 16 & 51 & 3 \\
+      & QA9 Adaptive attack
+      & 5 & 15 & 57 & --- \\
+
+    \bottomrule
+  \end{tabularx}
+\end{table}

@@ -1,0 +1,102 @@
+"""Ficha de extração da QP7 (consenso entre o fichamento do autor e a análise do Claude, 2026-10-13).
+
+Gera triagem_v2/extracao_qp7.csv. Uma linha por estudo incluído na QP7 (29 da busca e do snowballing + 5 canônicas).
+Campos:
+  tipo           auditoria | benchmark | SoK | avaliação | reprodutibilidade | survey+experimento (combinações com +)
+  escopo         FL robusto | VFL | DFL | pFL | MARL | RL geral
+  simples        S (baseline simples iguala/supera o sofisticado) | N | misto
+  padrao         A = sob ataque, simples ≥ complexo; B = sem ataque, a robustez custa; C = ataques simples ≥ otimizados;
+                 X = contraexemplo (o simples falha); vazio quando não se aplica
+  armadilhas     i datasets fáceis/ataques simplistas; ii não-IID quebra a defesa; iii adversário adaptativo;
+                 iv bugs ou métricas incompletas; v defesas simples bastam (várias por estudo)
+  defesa_rl      nao | cita (cataloga sem avaliar) | avalia
+  sementes       nº de sementes/execuções e se há variância (dp, EP, IC)
+  teste_estat    S/N: teste de hipótese ou correção de multiplicidade
+  achado         uma linha com o resultado que interessa à QP7
+"""
+import csv
+from pathlib import Path
+
+R = Path(__file__).resolve().parent.parent
+
+F = ['id', 'tipo', 'escopo', 'simples', 'padrao', 'armadilhas', 'defesa_rl', 'sementes', 'teste_estat', 'achado']
+L = [
+    # ---------------- RL geral (§13, canônicas)
+    ('C-Henderson', 'reprodutibilidade', 'RL geral', 'S', '', '', 'nao', '5 sementes; IC por bootstrap', 'S',
+     'Variância entre sementes e implementações muda conclusões; políticas triviais (ficar parado no Hopper) superam DDPG instável; aproximadores lineares competitivos'),
+    ('C-Agarwal', 'auditoria', 'RL geral', 'S', '', '', 'nao', '>18.200 execuções; IC por bootstrap estratificado; IQM', 'N',
+     'Com 3-5 sementes as estimativas pontuais enganam; DQN+Adam ≈ C51 (Atari 200M) e DER > CURL/SUNRISE (Atari 100k) após corrigir o protocolo'),
+    ('C-Mania', 'reprodutibilidade+benchmark', 'RL geral', 'S', '', '', 'nao', 'até 100 sementes; medianas e percentis', 'N',
+     'Busca aleatória sobre políticas lineares (ARS) iguala ou supera TRPO, PPO, SAC e DDPG no MuJoCo, com ≥15× menos custo que ES'),
+    ('C-Rajeswaran', 'auditoria', 'RL geral', 'S', '', '', 'nao', '3 sementes; sem variância', 'N',
+     'Políticas lineares e RBF igualam ou superam redes profundas (TRPO) em 5 de 6 tarefas; benchmarks com estados iniciais estreitos'),
+    ('C-Szelag', 'SoK+experimento', 'FL robusto', 'misto', 'A', 'iii', 'nao', 'sementes não informadas', 'S',
+     'TM e Krum igualam o cenário sem ataque contra ataques estáticos, mas o ataque adaptativo RMC derruba TM a 50% e Krum a 65,3% (teste t pareado); não cita defesa por RL'),
+    # ---------------- RL sob ataque bizantino
+    ('V2-3771', 'auditoria+reprodutibilidade', 'MARL', 'S', 'A;B', 'iii;iv;v', 'nao', '20 sementes pareadas por célula (5.960 execuções); IC 95%', 'S',
+     'Sem ataque, MAPPO-CWMed (mediana) tem a menor taxa de violações; após Holm (360 contrastes), nenhuma vantagem do RS-MARL se sustenta família a família; RS-MARL < Safe-MAPPO em 19/30 células só sem correção'),
+    # ---------------- FL robusto: auditorias e SoKs de prática de avaliação
+    ('V2-4764', 'SoK+auditoria', 'FL robusto', 'S', 'A;B', 'i;ii;iii;iv;v', 'cita', 'sementes não informadas', 'N',
+     'Auditoria de 50 defesas: 30% só MNIST, 40% ataques simplistas; treinar do zero (~80%) > FedRecover (~76%); média simples resiste em cross-device grande; FedAvg reduz a janela de ataque frente ao FedSGD. Cataloga o GAAvernor (RL), sem avaliá-lo'),
+    ('V2-2916', 'auditoria (mapeamento de 48 artigos)', 'FL robusto', 'S', 'A', 'i;iv;v', 'nao', 'sem experimento próprio', 'N',
+     'Seis falácias de avaliação; norm clipping e weak DP neutralizam backdoors; vários ataques só funcionam sob premissas irrealistas'),
+    ('SB-09', 'SoK+experimento', 'FL robusto', 'S', 'A', 'iv;v', 'nao', 'sementes não informadas', 'N',
+     'Modelo causal da completude dos estudos (a maioria é esparsa); norm clipping > Krum (edge-case: ASR 89,2→9,6% com acurácia mantida; Krum derruba a acurácia para 65%)'),
+    ('SB-08', 'SoK+benchmark', 'FL robusto', 'S', 'A', 'i;ii;iii;iv;v', 'nao', 'sementes não informadas', 'N',
+     'Median e TM superam DeepSight e LeadFL sob não-IID (GTSRB: 4-5% × 68% de ASR); ataques com gatilho otimizado (A3FL, IBA) superam a substituição de modelo'),
+    ('V2-4840', 'SoK (auditoria de 60+ artigos)', 'FL robusto', 'S', 'A', 'i;ii;iii;iv;v', 'cita', 'sem experimento próprio', 'N',
+     'Regras de frequência de IDs ≈ redes profundas no Car-Hacking (dataset trivial); IID artificial; avaliação adversarial fraca; cataloga o DRL-PBFL, sem validação prática'),
+    ('V2-4857', 'SoK+benchmark+reprodutibilidade', 'VFL', 'S', 'A;C', 'i;iv;v', 'nao', '3 sementes', 'N',
+     'Regularização genérica (ruído no gradiente, normalização de embedding) > defesas específicas de VFL; ataques simples (LFBA 95%) > BAEVFL (33%) em dados realistas'),
+    ('V2-4859', 'benchmark (medição)', 'FL robusto', 'S', 'B;C', 'i;ii;iv;v', 'nao', 'sementes não informadas', 'N',
+     'Modelos de ameaça idealizados e métricas incompletas distorcem o risco; em condições reais o FedAvg já atenua a maioria dos ataques; EdgeCase > DBA e Neurotoxin'),
+    # ---------------- FL robusto: benchmarks e avaliações
+    ('V2-4739', 'auditoria+benchmark', 'FL robusto', 'S', 'B;C', 'ii;iii;iv;v', 'nao', 'sementes não informadas', 'N',
+     'Bugs em códigos oficiais inflam ataques; ataque estático ≈ Neurotoxin e > DBA; FedAvg preserva a acurácia e defesas chegam a 388× mais lentas; LR do servidor baixo e mais clientes por rodada já dão robustez'),
+    ('V2-4839', 'SoK+benchmark', 'FL robusto', 'S', 'A;C', 'i;ii;iii;iv;v', 'nao', 'sementes não informadas', 'N',
+     '17 defesas × 15 ataques: Median e Krum > FoolsGold e DeepSight com 1.600× a 1,7·10⁶× menos custo; Gaussian e Sign-flip > ALIE e MinMax'),
+    ('V2-0274', 'benchmark+auditoria', 'FL robusto', 'S', 'A', 'i;ii;iii;iv;v', 'nao', 'média ± dp (~1.500 ensaios)', 'N',
+     'Média simples + client momentum > todas as defesas sob ALIE no CIFAR-10 (85,9 × DnC 83,6 × TM 81,7); SignGuard burlado por ataque adaptativo'),
+    ('V2-4731', 'avaliação experimental', 'FL robusto', 'S', 'A;B', 'ii;iii;iv;v', 'nao', 'sementes não informadas', 'N',
+     '8 agregações × 5 ataques: todas falham sob não-IID; sem ataque a média vence (Krum, GeoMed ~10% sob não-IID); TM e Median ≥ defesas complexas'),
+    ('V2-0016', 'avaliação crítica+benchmark', 'FL robusto', 'S', 'B', 'i;ii;iii;iv;v', 'nao', '3 sementes, média ± dp', 'N',
+     'Sob forte heterogeneidade e sem ataque, a média simples supera a maioria das defesas, que descartam clientes benignos'),
+    ('V2-0297', 'avaliação crítica+SoK', 'FL robusto', 'N', 'X', 'i;ii;iii;iv', 'nao', 'sementes não informadas', 'N',
+     'Sob não-IID severo, as 9 defesas de backdoor falham (ASR 90-96%), igualando o FedAvg sem defesa; recomenda pFL'),
+    ('V2-4735', 'benchmark', 'DFL', 'S', 'A', 'i;ii;iii;iv;v', 'nao', '3 sementes', 'N',
+     'Trim elimina o Neurotoxin em 0 rodadas, enquanto BALANCE e DFL-Dual ficam infectados >50 rodadas; M-Krum e FLAME ≥ DFL-Dual em IID; todas caem com IBA no CIFAR-10'),
+    ('V2-1403', 'benchmark', 'FL robusto', 'S', 'A;C', 'i;ii;iii;iv;v', 'nao', '3 sementes, só média', 'N',
+     'Amostragem aleatória de clientes é defesa natural no cross-device; TM ≈ Bulyan a 1/10 do tempo; Krum falha; MinSum (caixa-preta) quebra as 4 defesas no cross-silo IID'),
+    ('V2-2053', 'benchmark', 'FL robusto', 'S', 'B', '', 'nao', 'sementes não informadas', 'N',
+     'Sem ataque e com não-IID, o FedSGD supera os 7 agregadores robustos (81% MNIST, 69% CIFAR-10); sob ataque, quem contém o ataque vaza mais privacidade (MIA)'),
+    ('SB-05', 'benchmark', 'FL robusto', 'S', 'B', '', 'nao', 'sementes não informadas', 'N',
+     'Sem ataque ou com ataques fracos, o FedAvg sem defesa iguala ou supera RFA, m-Krum e FoolsGold'),
+    ('SB-07', 'survey+experimento', 'FL robusto', 'S', 'A', 'ii;iii;iv;v', 'nao', '25 execuções em parte dos testes; sem dp', 'N',
+     'Median e TM igualam ou superam Bulyan, MultiKrum, Weak DP e RLR, que dependem de calibrar o nº de atacantes'),
+    ('V2-0896', 'benchmark+reprodutibilidade', 'VFL', 'S', 'A', 'i;v', 'nao', '10 ensaios, erro padrão', 'N',
+     'O clipping de norma (two-norm) restaura o FL horizontal de ~17% para ~90%; o FL vertical é naturalmente mais resistente, e as defesas simples pioram nele'),
+    ('V2-4668', 'benchmark', 'VFL', 'S', 'A', 'iv;v', 'nao', '5 sementes, média ± dp', 'N',
+     'Ruído de DP simples > autoencoders aprendidos (CAE/DCAE) no escore de defesa; Random Forest ≈ XGBoost/SecureBoost com 5× menos custo'),
+    ('V2-1338', 'benchmark', 'pFL', 'S', 'A', 'v', 'nao', '3 sementes, só média', 'N',
+     'Simple-Tuning e FedRep (compartilhamento parcial) > pFL sofisticado e Krum; ASR −56,6% em média (BadNet: 76,5→6,4%)'),
+    ('V2-1365', 'avaliação (workshop)', 'FL robusto', 'S', 'B', '', 'cita', 'sementes não informadas', 'N',
+     'Agregações robustas descartam minorias benignas: viés (SPD) 20,5% no Multi-Krum × 5,4% no FedAvg; cita o FairFL (MARL de equidade), sem avaliá-lo'),
+    ('V2-4831', 'avaliação+benchmark', 'FL robusto', 'misto', 'B;X', 'i;ii;iii;iv', 'nao', '3-5 sementes, média ± dp, IC 95%', 'S',
+     'RMSE limpo normal com ASR 94,9% (métrica cega); agregadores por coordenada colapsam (RMSE 84) e só o Krum recupera; FedRep ≈ FedCCFA'),
+    ('V2-2562', 'reprodutibilidade (plataforma)', 'FL robusto', 'N', 'X', 'ii;iv', 'nao', '1 semente + validação cruzada de 5 dobras', 'N',
+     'Contraexemplo: no ViT, TM, Median e clipping caem a ~54% sob label flipping, e o FoolsGold mantém 84,7%'),
+    ('V2-4797', 'teoria+benchmark', 'FL robusto', 'S', 'A', 'ii;iii;iv;v', 'nao', '3 execuções (5 em parte)', 'N',
+     'Adversário adaptativo quebra defesas de tipo único (ASR 98-99,9%); Krum + CSFT iguala agregadores complexos (ASR 26,9% adaptativo, 3-4% não adaptativo)'),
+    ('V2-0953', 'auditoria+método', 'FL robusto', 'S', 'A', 'i;ii;iii;iv;v', 'nao', 'sementes não informadas', 'N',
+     'Análises anteriores do FRL tinham erros; sob LTI no CIFAR-10 o FRL cai a 11,9%, e Multi-Krum (60,8%) e TM (58,0%) o superam; propõe FRL++'),
+    ('V2-0252', 'SoK+auditoria+benchmark', 'FL robusto', 'S', 'A;B', 'v', 'nao', 'sementes não informadas', 'N',
+     'Em produção (≤0,1% de maliciosos), norm-bounding iguala Multi-Krum e TM (perda <1%) e supera TM no FEMNIST; FedAvg funcional pela amostragem aleatória'),
+    ('V2-0116', 'avaliação+método', 'FL robusto', 'S', 'A;B', 'ii;iv;v', 'nao', 'média ± dp; sementes não informadas', 'S',
+     'ABSA (adaptativo NÃO aprendido): ganho de custo (−38%); Multi-Krum a 1 p.p. (83,1 × 84,1 com 30%); FedAvg vence sem ataque (92,1 × 91,8)'),
+]
+
+with open(R / 'triagem_v2' / 'extracao_qp7.csv', 'w', encoding='utf-8-sig', newline='') as f:
+    w = csv.writer(f)
+    w.writerow(F)
+    w.writerows(L)
+print('extracao_qp7.csv', len(L))

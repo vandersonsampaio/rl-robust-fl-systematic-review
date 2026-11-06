@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite the article below and this repository."
+type: dataset
+title: "Reinforcement Learning and Bandit-based Defenses for Robust Federated Learning: Systematic Literature Review Data"
+abstract: >-
+  Supplementary material for a systematic literature review of reinforcement
+  learning and bandit-based defenses for robust federated learning: protocol and
+  amendments, search records, screening decisions, extraction and quality forms,
+  inter-rater reliability checks, and scripts that recompute the counts reported
+  in the article.
+version: "1.0"
+authors:
+  - given-names: "Vanderson S. de O. L."
+    family-names: Sampaio
+    affiliation: "Department of Informatics and Statistics (INE), Federal University of Santa Catarina"
+    orcid: "https://orcid.org/0000-0002-0509-4638"
+  - given-names: "Daniel G."
+    family-names: Costa
+    affiliation: "SYSTEC, Faculty of Engineering, University of Porto"
+    orcid: "https://orcid.org/0000-0003-3988-8476"
+  - given-names: "Douglas D. J."
+    name-particle: de
+    family-names: Macedo
+    affiliation: "Federal University of Santa Catarina"
+    orcid: "https://orcid.org/0000-0002-3237-4168"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - Byzantine-Robust Aggregation
+  - Model Poisoning
+  - Adaptive Defenses
+  - Non-Learned Baselines
+  - Incremental Contribution of Learning
+  - Performance Attribution
+  - Security
+preferred-citation:
+  type: article
+  title: "Reinforcement Learning and Bandit-based Defenses for Robust Federated Learning: A Systematic Literature Review"
+  authors:
+    - given-names: "Vanderson S. de O. L."
+      family-names: Sampaio
+      orcid: "https://orcid.org/0000-0002-0509-4638"
+    - given-names: "Daniel G."
+      family-names: Costa
+      orcid: "https://orcid.org/0000-0003-3988-8476"
+    - given-names: "Douglas D. J."
+      name-particle: de
+      family-names: Macedo
+      orcid: "https://orcid.org/0000-0002-3237-4168"
+  year: 2026

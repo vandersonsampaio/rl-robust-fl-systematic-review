@@ -1,0 +1,8 @@
+category,studies
+same-signal heuristic,6
+fixed action,9
+different-signal heuristic,6
+random,19
+partial ablation,4
+oracle,1
+none,32

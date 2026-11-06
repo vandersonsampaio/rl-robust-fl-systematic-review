@@ -1,0 +1,7 @@
+step,studies
+Studies in the main synthesis,77
+Some non-learned policy,45
+"Fixed action, heuristic or oracle",23
+Heuristic on the same signal,6
+"Same signal, >= 3 seeds and variability",1
+"Same signal, statistical test on the comparison",0

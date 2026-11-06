@@ -1,0 +1,67 @@
+\begin{table*}[!ht]
+  \centering
+  \caption{Comparison between the present review and related work.}
+  \label{tab:revisoes}
+  \footnotesize
+  \setlength{\tabcolsep}{2.5pt}
+  \renewcommand{\arraystretch}{1.15}
+  \begin{tabularx}{\textwidth}{@{}
+    >{\raggedright\arraybackslash}X
+    c c c c c c
+    @{}}
+    \toprule
+    & \multicolumn{3}{c}{Scope}
+    & \makecell{Central\\question}
+    & \makecell{Synthesis\\method}
+    & \makecell{Experimental\\quality} \\
+    \cmidrule(lr){2-4}\cmidrule(lr){5-5}\cmidrule(lr){6-6}\cmidrule(lr){7-7}
+    Work (type)
+      & \makecell{RL/\\bandits}
+      & \makecell{Robustness\\in FL}
+      & \makecell{Adversarial\\clients}
+      & \makecell{Incremental\\contribution\\of learning}
+      & \makecell{Baselines by\\controlled\\component}
+      & \makecell{Seeds,\\inference,\\test use, and\\budget} \\
+    \midrule
+    Rodríguez-Barroso et al., 2023~\cite{SB-07} (survey + experiment)
+      & \xmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Sharma et al., 2023~\cite{SB-09} (SoK + experiment)
+      & \xmark & \cmark & \cmark & \xmark & \xmark & \pmark \\
+    Ali et al., 2023~\cite{V2-0091} (survey)
+      & \pmark & \pmark & \cmark & \xmark & \xmark & \xmark \\
+    Lyu et al., 2024~\cite{REV-Lyu2024} (survey)
+      & \xmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Wan et al., 2024~\cite{REV-Wan2024} (survey)
+      & \xmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Yang et al., 2024~\cite{REV-Yang2024} (survey)
+      & \pmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Szeląg et al., 2025~\cite{eprint2025adaptive} (survey + experiment)
+      & \xmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Ahmad et al., 2025~\cite{V2-2725} (systematic review)
+      & \pmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Khan et al., 2025~\cite{V2-4764} (SoK + audit)
+      & \pmark & \cmark & \cmark & \xmark & \xmark & \pmark \\
+    Zhang et al., 2025~\cite{V2-4839} (SoK + benchmark)
+      & \xmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Junior et al., 2025~\cite{V2-0101} (systematic review)
+      & \pmark & \cmark & \cmark & \xmark & \xmark & \pmark \\
+    Soulb et al., 2025~\cite{REV-Soulb2025} (review + case study)
+      & \xmark & \cmark & \pmark & \xmark & \xmark & \pmark \\
+    Zakaria and Khalid, 2025~\cite{REV-Zakaria2025} (systematic review)
+      & \pmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Li et al., 2025~\cite{REV-Li2025} (survey)
+      & \pmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Chacko and Kalaivani, 2026~\cite{REV-Chacko2026} (survey)
+      & \pmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Bajgai et al., 2026~\cite{V2-0566} (survey with systematic search)
+      & \pmark & \pmark & \pmark & \xmark & \xmark & \xmark \\
+    Bellachia et al., 2026~\cite{SB-08} (systematic review + benchmark)
+      & \xmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
+    Shahsavari et al., 2026~\cite{V2-4840} (SoK + audit)
+      & \pmark & \pmark & \pmark & \xmark & \xmark & \pmark \\
+    \midrule
+    \textbf{Present review} (systematic review)
+      & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark \\
+    \bottomrule
+  \end{tabularx}
+\end{table*}
